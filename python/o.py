@@ -150,6 +150,104 @@ class Authentication:
             if 'conn' in locals():
                 conn.close()
 
+    def authenticate_user(self, username, password, totp_code):
+        username = sanitize_input(username)
+        try:
+            conn = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="",
+                database="file_system_db"
+            )
+            cursor = conn.cursor()
+            cursor.execute('SELECT password_hash, salt, two_factor_secret FROM users WHERE username=%s', (username,))
+            user_data = cursor.fetchone()
+            if not user_data:
+                messagebox.showerror("Error", "User not found!")
+                logging.warning(f"Login failed: {username} not found")
+                return False
+            stored_hash, salt, two_factor_secret = user_data
+            computed_hash, _ = self.hash_password(password, salt)
+            totp = pyotp.TOTP(two_factor_secret)
+            if stored_hash == computed_hash and totp.verify(totp_code):
+                session_token = secrets.token_hex(32)
+                cursor.execute('UPDATE users SET session_token=%s WHERE username=%s', (session_token, username))
+                conn.commit()
+                logging.info(f"User {username} authenticated successfully")
+                return session_token
+            messagebox.showerror("Error", "Authentication failed!")
+            logging.warning(f"Authentication failed for {username}")
+            return False
+        except mysql.connector.Error as err:
+            messagebox.showerror("Error", f"Database error: {err}")
+            logging.error(f"Authentication failed for {username}: {err}")
+            return False
+        finally:
+            if 'conn' in locals():
+                conn.close()
+
+# File management with encryption and access control
+class FileManager:
+    def __init__(self, username, session_token, app):
+        self.app = app
+        try:
+            conn = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="",
+                database="file_system_db"
+            )
+            cursor = conn.cursor()
+            cursor.execute('SELECT encryption_key, session_token FROM users WHERE username=%s', (username,))
+            data = cursor.fetchone()
+            if data and data[1] == session_token:
+                self.key = data[0]
+                self.cipher = Fernet(self.key)
+                self.username = username
+                self.session_token = session_token
+            else:
+                raise ValueError("Invalid session token")
+        except mysql.connector.Error as err:
+            logging.error(f"FileManager init failed for {username}: {err}")
+            raise
+        finally:
+            if 'conn' in locals():
+                conn.close()
+
+    def encrypt_file(self, filepath=None, data=None):
+        if filepath:
+            if scan_for_malware(filepath=filepath):
+                raise ValueError("Malware detected in file!")
+            try:
+                with open(filepath, 'rb') as file:
+                    file_data = file.read()
+                if len(file_data) > 10 * 1024 * 1024:
+                    raise ValueError("File too large (max 10MB)!")
+                return self.cipher.encrypt(file_data)
+            except Exception as e:
+                messagebox.showerror("Error", f"Encryption failed: {e}")
+                logging.error(f"Encryption failed for {filepath}: {e}")
+                return None
+        elif data:
+            if scan_for_malware(data=data):
+                raise ValueError("Malware detected in text data!")
+            try:
+                if len(data) > 10 * 1024 * 1024:
+                    raise ValueError("Data too large (max 10MB)!")
+                return self.cipher.encrypt(data.encode())
+            except Exception as e:
+                messagebox.showerror("Error", f"Encryption failed: {e}")
+                logging.error(f"Encryption failed for text data: {e}")
+                return None
+
+    def decrypt_file(self, encrypted_data):
+        try:
+            return self.cipher.decrypt(encrypted_data)
+        except Exception as e:
+            messagebox.showerror("Error", f"Decryption failed: {e}")
+            logging.error(f"Decryption failed: {e}")
+            return None
+
     
 
 if __name__ == "__main__":
