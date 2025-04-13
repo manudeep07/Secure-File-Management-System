@@ -1,0 +1,4 @@
+mysql-connector-python==8.0.33
+ttkthemes==3.2.2
+cryptography==41.0.7
+pyotp==2.9.0 
