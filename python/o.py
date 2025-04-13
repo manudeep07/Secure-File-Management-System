@@ -248,8 +248,65 @@ class FileManager:
             logging.error(f"Decryption failed: {e}")
             return None
 
-    
+    def save_file(self, filepath):
+        try:
+            # Read file as binary
+            with open(filepath, 'rb') as file:
+                file_data = file.read()
+            
+            # Encrypt the binary data
+            encrypted_data = self.cipher.encrypt(file_data)
+            
+            metadata = f"Size: {os.path.getsize(filepath)} bytes, Modified: {os.path.getmtime(filepath)}"
+            
+            conn = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="",
+                database="file_system_db"
+            )
+            cursor = conn.cursor()
+            
+            # Store encrypted data as binary
+            cursor.execute('INSERT INTO files (filename, owner, encrypted_data, metadata) VALUES (%s, %s, %s, %s)', 
+                          (sanitize_input(os.path.basename(filepath)), self.username, encrypted_data, metadata))
+            
+            conn.commit()
+            messagebox.showinfo("Success", "File uploaded and encrypted successfully!")
+            logging.info(f"File {filepath} uploaded by {self.username}")
+        except Exception as e:
+            messagebox.showerror("Error", f"File upload failed: {str(e)}")
+            logging.error(f"File upload failed for {filepath}: {str(e)}")
+        finally:
+            if 'conn' in locals():
+                conn.close()
 
+    def write_file(self, filename, data):
+        encrypted_data = self.encrypt_file(data=data)
+        if not encrypted_data:
+            return
+        metadata = f"Size: {len(data)} bytes, Created: {os.path.getctime('.')}"
+        try:
+            conn = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="",
+                database="file_system_db"
+            )
+            cursor = conn.cursor()
+            cursor.execute('INSERT INTO files (filename, owner, encrypted_data, metadata) VALUES (%s, %s, %s, %s)', 
+                          (sanitize_input(filename), self.username, encrypted_data, metadata))
+            conn.commit()
+            messagebox.showinfo("Success", "File written and encrypted successfully!")
+            logging.info(f"File {filename} written by {self.username}")
+        except mysql.connector.Error as err:
+            messagebox.showerror("Error", f"Database error: {err}")
+            logging.error(f"File write failed for {filename}: {err}")
+        finally:
+            if 'conn' in locals():
+                conn.close()
+
+    
 if __name__ == "__main__":
     try:
         setup_database()
