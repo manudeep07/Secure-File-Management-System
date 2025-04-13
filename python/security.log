@@ -1,0 +1,631 @@
+2025-03-23 19:23:56,163 - ERROR - Database setup failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:24:01,827 - ERROR - Application startup failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:24:37,638 - ERROR - Database setup failed: 1049 (42000): Unknown database 'file_system_db'
+2025-03-23 19:24:44,163 - ERROR - Application startup failed: 1049 (42000): Unknown database 'file_system_db'
+2025-03-23 19:24:55,330 - ERROR - Database setup failed: 1049 (42000): Unknown database 'file_system.db'
+2025-03-23 19:24:58,594 - ERROR - Application startup failed: 1049 (42000): Unknown database 'file_system.db'
+2025-03-23 19:25:04,769 - ERROR - Database setup failed: 1049 (42000): Unknown database 'file_system_db'
+2025-03-23 19:31:13,340 - ERROR - Application startup failed: 1049 (42000): Unknown database 'file_system_db'
+2025-03-23 19:31:19,562 - ERROR - Database setup failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:31:34,962 - ERROR - Application startup failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:32:47,923 - ERROR - Database setup failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:32:51,093 - ERROR - Application startup failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:33:04,122 - ERROR - Database setup failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:33:06,524 - ERROR - Application startup failed: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:33:57,824 - INFO - Database and tables created successfully
+2025-03-23 19:34:24,233 - ERROR - Authentication failed for manudeep: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:34:52,430 - ERROR - Authentication failed for manudeep: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:34:58,957 - ERROR - Registration failed for manudeep: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:35:34,912 - ERROR - Registration failed for manudeep1: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:35:40,145 - ERROR - Authentication failed for manudeep1: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:37:12,704 - ERROR - Registration failed for manudeep1: 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
+2025-03-23 19:41:00,362 - INFO - Database and tables created successfully
+2025-03-23 19:41:14,638 - INFO - User manudeep registered successfully
+2025-03-23 19:44:47,744 - INFO - User manudeep authenticated successfully
+2025-03-23 19:45:10,984 - INFO - File a.txt written by manudeep
+2025-03-23 19:45:17,198 - INFO - File a.txt decrypted by manudeep
+2025-03-23 19:45:31,050 - ERROR - File save failed for C:/Users/deepm/Downloads/Flux_Dev_Professional_graphic_design_3D_render_A_bold_and_dyna_2.jpeg: 1406 (22001): Data too long for column 'encrypted_data' at row 1
+2025-03-23 19:45:44,876 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-03-23 19:46:04,575 - INFO - File a.txt decrypted by manudeep
+2025-03-23 19:46:07,674 - INFO - User logged out
+2025-03-23 20:00:55,208 - INFO - Database and tables created successfully
+2025-03-23 20:01:13,672 - WARNING - Authentication failed for manudeep
+2025-03-23 20:01:17,674 - WARNING - Registration failed for manudeep: Username exists
+2025-03-23 20:01:52,068 - INFO - User manudeep authenticated successfully
+2025-03-23 20:02:40,645 - INFO - File a.txt exported by manudeep
+2025-03-23 20:02:46,600 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg exported by manudeep
+2025-03-23 20:03:31,745 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted by manudeep
+2025-03-23 20:04:37,908 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg imported by manudeep
+2025-03-23 20:17:51,019 - INFO - User logged out
+2025-03-30 16:19:12,860 - INFO - Database and tables created successfully
+2025-03-30 16:20:18,720 - INFO - User manudeep authenticated successfully
+2025-03-30 16:22:38,762 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg exported by manudeep
+2025-03-30 16:34:51,348 - INFO - User logged out
+2025-03-30 16:34:54,013 - INFO - Database and tables created successfully
+2025-03-31 16:49:40,507 - INFO - Database and tables created successfully
+2025-03-31 16:50:30,808 - WARNING - Login failed: manudeep not found
+2025-03-31 16:50:36,658 - INFO - Database and tables created successfully
+2025-03-31 16:53:46,227 - INFO - User manudeep registered successfully
+2025-03-31 16:55:39,159 - INFO - User manudeep authenticated successfully
+2025-03-31 16:55:50,554 - ERROR - File save failed for C:/Users/deepm/OneDrive/Pictures/1185634.jpg: 1153 (08S01): Got a packet bigger than 'max_allowed_packet' bytes
+2025-03-31 16:55:54,580 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-03-31 16:56:18,659 - INFO - File a.txt written by manudeep
+2025-03-31 16:56:39,803 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg imported by manudeep
+2025-03-31 16:56:45,715 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted by manudeep
+2025-03-31 16:58:00,018 - INFO - File a.txt decrypted by manudeep
+2025-03-31 16:58:15,523 - ERROR - Decryption failed: 
+2025-03-31 16:58:18,089 - ERROR - Decryption failed: 
+2025-03-31 16:58:24,395 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg exported by manudeep
+2025-03-31 16:58:36,501 - INFO - File exported_exported_04126187bbd69eb1c2fcf20d8c47731e imported by manudeep
+2025-03-31 16:58:45,689 - ERROR - Decryption failed: 
+2025-03-31 16:58:54,179 - INFO - File exported_exported_04126187bbd69eb1c2fcf20d8c47731e exported by manudeep
+2025-03-31 16:58:59,202 - INFO - File exported_exported_04126187bbd69eb1c2fcf20d8c47731e deleted by manudeep
+2025-03-31 16:59:08,452 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by manudeep
+2025-03-31 18:28:40,789 - INFO - User logged out
+2025-03-31 18:29:57,799 - INFO - Database and tables created successfully
+2025-03-31 18:30:44,645 - INFO - User manudeep authenticated successfully
+2025-03-31 18:32:25,898 - INFO - User logged out
+2025-03-31 18:33:28,481 - INFO - Database and tables created successfully
+2025-03-31 18:33:52,027 - INFO - User manudeep authenticated successfully
+2025-03-31 18:34:04,750 - INFO - File a.txt decrypted and opened by manudeep
+2025-03-31 18:34:13,174 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-03-31 18:35:39,562 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-03-31 18:35:42,514 - INFO - Database and tables created successfully
+2025-03-31 18:36:13,078 - INFO - User manudeep authenticated successfully
+2025-03-31 18:36:15,717 - INFO - File a.txt decrypted and opened by manudeep
+2025-03-31 18:36:19,493 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-03-31 18:36:33,887 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by manudeep
+2025-03-31 18:37:11,734 - INFO - File exported_a.txt imported by manudeep
+2025-03-31 18:37:17,262 - ERROR - Decryption failed: 
+2025-03-31 18:37:25,441 - ERROR - Decryption failed: 
+2025-03-31 18:37:27,510 - INFO - File exported_a.txt deleted by manudeep
+2025-03-31 18:37:48,636 - INFO - File a.txt exported by manudeep
+2025-03-31 18:38:40,111 - INFO - File exported_a.txt imported by manudeep
+2025-03-31 18:38:55,409 - INFO - File exported_a.txt decrypted and opened by manudeep
+2025-03-31 18:39:00,815 - INFO - File exported_a.txt decrypted and opened by manudeep
+2025-03-31 18:39:08,621 - INFO - File exported_exported_exported_04126187bbd69eb1c2fcf20 imported by manudeep
+2025-03-31 18:39:11,326 - ERROR - Decryption failed: 
+2025-03-31 18:39:13,450 - INFO - File exported_exported_exported_04126187bbd69eb1c2fcf20 deleted by manudeep
+2025-03-31 18:39:15,748 - INFO - File exported_a.txt deleted by manudeep
+2025-03-31 18:39:18,025 - INFO - File a.txt deleted by manudeep
+2025-03-31 18:39:37,219 - INFO - File C:/Users/deepm/OneDrive/Pictures/bluetooth-module-hc-05-buy-india-400x400.jpg uploaded by manudeep
+2025-03-31 18:39:43,509 - INFO - File bluetooth-module-hc-05-buy-india-400x400.jpg exported by manudeep
+2025-03-31 18:40:06,441 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg imported by manudeep
+2025-03-31 18:40:11,425 - ERROR - Decryption failed: 
+2025-03-31 18:40:12,995 - INFO - File bluetooth-module-hc-05-buy-india-400x400.jpg deleted by manudeep
+2025-03-31 18:40:15,339 - ERROR - Decryption failed: 
+2025-03-31 18:40:19,222 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg exported by manudeep
+2025-03-31 18:40:28,827 - INFO - File exported_bluetooth-module-hc-05-buy-india-400x400. imported by manudeep
+2025-03-31 18:40:30,895 - INFO - File exported_bluetooth-module-hc-05-buy-india-400x400. decrypted and opened by manudeep
+2025-03-31 18:40:41,293 - ERROR - Decryption failed: 
+2025-03-31 18:40:43,221 - INFO - File exported_bluetooth-module-hc-05-buy-india-400x400. decrypted and opened by manudeep
+2025-03-31 18:40:55,275 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by manudeep
+2025-03-31 18:40:57,847 - INFO - File exported_bluetooth-module-hc-05-buy-india-400x400. deleted by manudeep
+2025-03-31 18:41:05,144 - INFO - File exported_bluetooth-module-hc-05-buy-india-400x400. imported by manudeep
+2025-03-31 18:41:07,509 - INFO - File exported_bluetooth-module-hc-05-buy-india-400x400. decrypted and opened by manudeep
+2025-03-31 18:41:22,703 - INFO - File exported_bluetooth-module-hc-05-buy-india-400x400. deleted by manudeep
+2025-03-31 18:41:28,006 - INFO - Database and tables created successfully
+2025-03-31 18:42:05,537 - INFO - Database and tables created successfully
+2025-03-31 18:42:24,807 - INFO - User user1 registered successfully
+2025-03-31 18:43:48,056 - INFO - User user1 authenticated successfully
+2025-03-31 18:43:54,242 - INFO - File exported_bluetooth-module-hc-05-buy-india-400x400. imported by user1
+2025-03-31 18:43:57,383 - ERROR - Decryption failed: 
+2025-03-31 18:44:05,969 - INFO - File exported_a.txt imported by user1
+2025-03-31 18:44:10,453 - ERROR - Decryption failed: 
+2025-03-31 18:44:32,600 - INFO - File E:/os project/python/exported_bluetooth-module-hc-05-buy-india-400x400.jpg.enc uploaded by user1
+2025-03-31 18:44:36,923 - ERROR - Decryption failed: 
+2025-03-31 18:44:38,627 - ERROR - Decryption failed: 
+2025-03-31 18:44:40,997 - ERROR - Decryption failed: 
+2025-03-31 18:44:51,222 - ERROR - Delete failed for exported_bluetooth-module-hc-05-buy-india-400x400.: Unread result found
+2025-03-31 18:44:53,650 - INFO - File exported_a.txt deleted by user1
+2025-03-31 18:44:57,012 - ERROR - Delete failed for exported_bluetooth-module-hc-05-buy-india-400x400.: Unread result found
+2025-03-31 18:44:59,400 - ERROR - Delete failed for exported_bluetooth-module-hc-05-buy-india-400x400.: Unread result found
+2025-03-31 18:45:05,662 - INFO - User logged out
+2025-03-31 19:17:49,711 - INFO - Database and tables created successfully
+2025-03-31 19:18:18,230 - INFO - Database and tables created successfully
+2025-03-31 19:18:50,321 - INFO - User manudeep authenticated successfully
+2025-03-31 19:19:41,708 - INFO - Database and tables created successfully
+2025-03-31 19:20:10,434 - INFO - User manudeep authenticated successfully
+2025-03-31 19:20:12,239 - INFO - User logged out
+2025-03-31 19:20:14,934 - INFO - Database and tables created successfully
+2025-04-13 12:51:28,294 - INFO - Database and tables created successfully
+2025-04-13 12:52:21,054 - WARNING - Authentication failed for manudeep
+2025-04-13 12:52:36,096 - WARNING - Authentication failed for manudeep
+2025-04-13 12:52:46,588 - WARNING - Authentication failed for manudeep
+2025-04-13 12:52:52,190 - WARNING - Registration failed for manudeep: Username exists
+2025-04-13 13:02:42,688 - INFO - Database and tables created successfully
+2025-04-13 13:03:17,369 - INFO - User manudeep authenticated successfully
+2025-04-13 13:03:24,030 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-13 13:03:28,329 - INFO - File a.txt decrypted and opened by manudeep
+2025-04-13 13:03:40,632 - INFO - File a.txt deleted by manudeep
+2025-04-13 13:03:59,860 - INFO - File a.txt written by manudeep
+2025-04-13 13:04:03,028 - INFO - File a.txt decrypted and opened by manudeep
+2025-04-13 13:04:11,956 - INFO - File a.txt exported by manudeep
+2025-04-13 13:05:19,570 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg imported by manudeep
+2025-04-13 13:05:25,173 - ERROR - Decryption failed: 
+2025-04-13 13:05:42,354 - INFO - User logged out
+2025-04-13 13:05:53,153 - INFO - User user registered successfully
+2025-04-13 13:07:28,684 - INFO - User user authenticated successfully
+2025-04-13 13:07:41,822 - INFO - File E:/os project/exported_04126187bbd69eb1c2fcf20d8c47731e.jpg.enc uploaded by user
+2025-04-13 13:07:44,853 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg.enc decrypted and opened by user
+2025-04-13 13:08:05,588 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg imported by user
+2025-04-13 13:08:09,310 - ERROR - Decryption failed: 
+2025-04-13 13:08:13,986 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by user
+2025-04-13 13:08:16,456 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg.enc deleted by user
+2025-04-13 13:08:46,337 - ERROR - File save failed for C:/Users/deepm/OneDrive/Pictures/1185634.jpg: 2013 (HY000): Lost connection to MySQL server during query
+2025-04-13 13:08:56,295 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by user
+2025-04-13 13:09:06,938 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg shared with manudeep by user
+2025-04-13 13:09:10,627 - INFO - User logged out
+2025-04-13 13:09:27,397 - INFO - User manudeep authenticated successfully
+2025-04-13 13:09:30,753 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-13 13:09:41,253 - INFO - User logged out
+2025-04-13 13:21:43,266 - INFO - Database and tables created successfully
+2025-04-13 13:22:23,443 - WARNING - Authentication failed for manudeep
+2025-04-13 13:22:32,061 - WARNING - Authentication failed for manudeep
+2025-04-13 13:22:44,573 - INFO - User manudeep authenticated successfully
+2025-04-13 13:22:54,737 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by manudeep
+2025-04-13 13:23:01,006 - INFO - File exported_04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by manudeep
+2025-04-13 13:23:05,664 - INFO - User logged out
+2025-04-13 13:23:07,805 - INFO - Database and tables created successfully
+2025-04-13 13:33:12,096 - INFO - Database and tables created successfully
+2025-04-13 13:33:41,266 - INFO - User manudeep authenticated successfully
+2025-04-13 14:00:09,381 - INFO - Database and tables created successfully
+2025-04-13 14:00:36,517 - WARNING - Authentication failed for manudeep
+2025-04-13 14:00:44,879 - INFO - User manudeep authenticated successfully
+2025-04-13 14:01:02,321 - INFO - File a.txt exported by manudeep
+2025-04-13 14:01:47,895 - ERROR - Import failed for E:/os project/python/exported_a.txt.enc: 
+2025-04-13 14:01:58,931 - ERROR - Import failed for E:/os project/python/exported_a.txt.enc: 
+2025-04-13 14:02:20,412 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-13 14:02:37,029 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg exported by manudeep
+2025-04-13 14:03:13,182 - ERROR - Import failed for E:/os project/python/exported_04126187bbd69eb1c2fcf20d8c47731e.jpg.enc: 
+2025-04-13 14:03:45,353 - INFO - Database and tables created successfully
+2025-04-13 14:04:05,460 - INFO - User user authenticated successfully
+2025-04-13 14:04:16,410 - ERROR - Import failed for E:/os project/python/exported_04126187bbd69eb1c2fcf20d8c47731e.jpg.enc: 
+2025-04-13 14:04:24,460 - ERROR - Import failed for E:/os project/python/exported_a.txt.enc: 
+2025-04-13 14:04:31,745 - ERROR - Import failed for E:/os project/python/exported_exported_exported_04126187bbd69eb1c2fcf20d8c47731e.enc: 
+2025-04-13 14:04:35,449 - INFO - User logged out
+2025-04-13 14:05:08,422 - INFO - Database and tables created successfully
+2025-04-13 14:05:26,273 - INFO - User manudeep authenticated successfully
+2025-04-13 14:05:31,394 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-13 14:05:47,358 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg exported by manudeep
+2025-04-13 14:06:48,404 - ERROR - Import failed for E:/os project/python/exported_04126187bbd69eb1c2fcf20d8c47731e.jpg.enc: 
+2025-04-13 14:08:25,432 - INFO - User logged out
+2025-04-13 14:08:50,953 - INFO - Database and tables created successfully
+2025-04-13 14:08:54,864 - ERROR - Application startup failed: name 'App' is not defined
+2025-04-13 14:09:04,938 - INFO - Database and tables created successfully
+2025-04-13 14:09:15,398 - ERROR - Application startup failed: name 'App' is not defined
+2025-04-13 14:15:14,431 - INFO - Database and tables created successfully
+2025-04-13 14:15:36,178 - INFO - User manudeep authenticated successfully
+2025-04-13 14:16:03,478 - INFO - File C:/Users/deepm/OneDrive/Pictures/png-clipart-claire-holt-assets/Background.png uploaded by manudeep
+2025-04-13 14:16:13,709 - INFO - File Background.png exported by manudeep
+2025-04-13 14:16:39,957 - ERROR - Import failed for E:/os project/python/exported_Background.png.enc: Incorrect password
+2025-04-13 14:16:44,746 - ERROR - Decryption failed: 
+2025-04-13 14:16:47,829 - ERROR - Decryption failed: 
+2025-04-13 14:16:50,628 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-13 14:16:54,531 - INFO - File a.txt decrypted and opened by manudeep
+2025-04-13 14:17:12,164 - ERROR - Import failed for E:/os project/python/exported_Background.png.enc: Incorrect password
+2025-04-13 14:17:43,511 - INFO - User logged out
+2025-04-13 14:18:04,255 - INFO - User user authenticated successfully
+2025-04-13 14:18:13,330 - ERROR - Import failed for E:/os project/python/exported_Background.png.enc: Incorrect password
+2025-04-13 14:20:30,043 - INFO - Database and tables created successfully
+2025-04-13 14:20:59,988 - INFO - User manudeep authenticated successfully
+2025-04-13 14:21:13,198 - INFO - File hello.txt written by manudeep
+2025-04-13 14:21:25,861 - INFO - File hello.txt exported by manudeep
+2025-04-13 14:21:46,954 - ERROR - Import failed for E:/os project/python/exported_hello.txt.enc: Invalid file header
+2025-04-13 14:21:49,540 - INFO - File hello.txt decrypted and opened by manudeep
+2025-04-13 14:22:02,336 - ERROR - Import failed for E:/os project/python/exported_hello.txt.enc: Invalid file header
+2025-04-13 14:25:08,382 - INFO - Database and tables created successfully
+2025-04-13 14:25:31,597 - WARNING - Authentication failed for manudeep
+2025-04-13 14:25:40,943 - INFO - User manudeep authenticated successfully
+2025-04-13 16:41:33,352 - INFO - Database and tables created successfully
+2025-04-13 16:42:04,892 - INFO - User manudeep authenticated successfully
+2025-04-13 16:42:14,103 - INFO - File hello.txt deleted by manudeep
+2025-04-13 16:42:18,264 - INFO - File a.txt deleted by manudeep
+2025-04-13 16:42:23,283 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by manudeep
+2025-04-13 16:42:28,511 - INFO - File Background.png deleted by manudeep
+2025-04-13 16:42:43,809 - INFO - File C:/Users/deepm/OneDrive/Pictures/360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.jpg uploaded by manudeep
+2025-04-13 16:42:54,390 - INFO - File 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j exported by manudeep
+2025-04-13 16:43:31,113 - ERROR - Import failed for E:/os project/python/exported_360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j.enc: Incorrect password or decryption error - 
+2025-04-13 16:47:08,272 - INFO - Database and tables created successfully
+2025-04-13 16:47:34,943 - INFO - User manudeep authenticated successfully
+2025-04-13 16:47:49,612 - INFO - File 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j deleted by manudeep
+2025-04-13 16:48:19,932 - ERROR - File save failed for C:/Users/deepm/OneDrive/Pictures/Screenshots 1/Screenshot 2023-09-09 200919.png: 1153 (08S01): Got a packet bigger than 'max_allowed_packet' bytes
+2025-04-13 16:48:28,527 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-13 16:48:40,882 - INFO - File a.txt written by manudeep
+2025-04-13 16:50:23,846 - INFO - Database and tables created successfully
+2025-04-13 16:50:42,518 - INFO - User manudeep authenticated successfully
+2025-04-13 16:50:45,137 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-13 16:50:49,065 - INFO - File a.txt decrypted and opened by manudeep
+2025-04-13 16:50:53,044 - INFO - File a.txt decrypted and opened by manudeep
+2025-04-13 16:50:59,383 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-13 16:53:19,685 - INFO - Database and tables created successfully
+2025-04-13 16:53:38,874 - INFO - User manudeep authenticated successfully
+2025-04-13 16:53:46,948 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-13 16:53:56,142 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-13 17:08:01,673 - INFO - Database and tables created successfully
+2025-04-13 17:16:59,692 - INFO - Database and tables created successfully
+2025-04-13 17:16:59,786 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.120.135:5000
+2025-04-13 17:16:59,787 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 17:16:59,789 - INFO -  * Restarting with stat
+2025-04-13 17:17:00,252 - INFO - Database and tables created successfully
+2025-04-13 17:17:00,269 - WARNING -  * Debugger is active!
+2025-04-13 17:17:00,274 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:17:38,375 - INFO - Database and tables created successfully
+2025-04-13 17:17:38,413 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.120.135:5000
+2025-04-13 17:17:38,413 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 17:17:38,414 - INFO -  * Restarting with stat
+2025-04-13 17:17:38,872 - INFO - Database and tables created successfully
+2025-04-13 17:17:38,900 - WARNING -  * Debugger is active!
+2025-04-13 17:17:38,903 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:18:11,077 - INFO - Database and tables created successfully
+2025-04-13 17:18:11,116 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.120.135:5000
+2025-04-13 17:18:11,116 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 17:18:11,118 - INFO -  * Restarting with stat
+2025-04-13 17:18:11,549 - INFO - Database and tables created successfully
+2025-04-13 17:18:11,571 - WARNING -  * Debugger is active!
+2025-04-13 17:18:11,573 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:18:35,509 - INFO - Database and tables created successfully
+2025-04-13 17:18:35,548 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.120.135:5000
+2025-04-13 17:18:35,548 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 17:18:35,550 - INFO -  * Restarting with stat
+2025-04-13 17:18:35,940 - INFO - Database and tables created successfully
+2025-04-13 17:18:35,959 - WARNING -  * Debugger is active!
+2025-04-13 17:18:35,962 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:22:40,945 - INFO -  * Detected change in 'E:\\os project\\python\\o.py', reloading
+2025-04-13 17:22:41,007 - INFO -  * Restarting with stat
+2025-04-13 17:22:41,149 - INFO -  * Detected change in 'e:\\os project\\python\\o.py', reloading
+2025-04-13 17:22:41,206 - INFO -  * Restarting with stat
+2025-04-13 17:23:02,463 - INFO - Database and tables created successfully
+2025-04-13 17:23:02,497 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.120.135:5000
+2025-04-13 17:23:02,497 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 17:23:02,499 - INFO -  * Restarting with stat
+2025-04-13 17:23:02,921 - INFO - Database and tables created successfully
+2025-04-13 17:23:02,941 - WARNING -  * Debugger is active!
+2025-04-13 17:23:02,944 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:23:09,058 - INFO - 127.0.0.1 - - [13/Apr/2025 17:23:09] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-13 17:23:09,101 - INFO - 127.0.0.1 - - [13/Apr/2025 17:23:09] "GET /login HTTP/1.1" 200 -
+2025-04-13 17:23:09,321 - INFO - 127.0.0.1 - - [13/Apr/2025 17:23:09] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-04-13 17:23:47,541 - INFO - 127.0.0.1 - - [13/Apr/2025 17:23:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-13 17:23:47,752 - INFO - 127.0.0.1 - - [13/Apr/2025 17:23:47] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:24:00,144 - INFO - 127.0.0.1 - - [13/Apr/2025 17:24:00] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-13 17:24:00,165 - INFO - 127.0.0.1 - - [13/Apr/2025 17:24:00] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:24:10,836 - ERROR - Malware scan failed for 1185634.jpg: [Errno 2] No such file or directory: '1185634.jpg'
+2025-04-13 17:24:10,862 - INFO - 127.0.0.1 - - [13/Apr/2025 17:24:10] "[35m[1mPOST /upload HTTP/1.1[0m" 500 -
+2025-04-13 17:24:11,260 - INFO - 127.0.0.1 - - [13/Apr/2025 17:24:11] "GET /upload?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-13 17:24:11,431 - INFO - 127.0.0.1 - - [13/Apr/2025 17:24:11] "GET /upload?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-13 17:24:11,843 - INFO - 127.0.0.1 - - [13/Apr/2025 17:24:11] "GET /upload?__debugger__=yes&cmd=resource&f=console.png&s=huXMkENloPWIlM7fGZD9 HTTP/1.1" 200 -
+2025-04-13 17:24:12,091 - INFO - 127.0.0.1 - - [13/Apr/2025 17:24:12] "GET /upload?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-13 17:26:20,586 - INFO -  * Detected change in 'e:\\os project\\python\\o.py', reloading
+2025-04-13 17:26:20,714 - INFO -  * Restarting with stat
+2025-04-13 17:26:21,297 - INFO - Database and tables created successfully
+2025-04-13 17:26:21,320 - WARNING -  * Debugger is active!
+2025-04-13 17:26:21,323 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:26:33,783 - INFO - 127.0.0.1 - - [13/Apr/2025 17:26:33] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-13 17:26:33,888 - INFO - 127.0.0.1 - - [13/Apr/2025 17:26:33] "GET /login HTTP/1.1" 200 -
+2025-04-13 17:26:55,705 - INFO - Database and tables created successfully
+2025-04-13 17:26:55,730 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.120.135:5000
+2025-04-13 17:26:55,730 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 17:26:55,731 - INFO -  * Restarting with stat
+2025-04-13 17:26:56,131 - INFO - Database and tables created successfully
+2025-04-13 17:26:56,161 - WARNING -  * Debugger is active!
+2025-04-13 17:26:56,164 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:27:00,045 - INFO - 127.0.0.1 - - [13/Apr/2025 17:27:00] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-13 17:27:00,055 - INFO - 127.0.0.1 - - [13/Apr/2025 17:27:00] "GET /login HTTP/1.1" 200 -
+2025-04-13 17:27:42,689 - INFO - 127.0.0.1 - - [13/Apr/2025 17:27:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-13 17:27:42,858 - INFO - 127.0.0.1 - - [13/Apr/2025 17:27:42] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:27:51,042 - ERROR - Malware scan failed for 1185634.jpg: [Errno 2] No such file or directory: '1185634.jpg'
+2025-04-13 17:27:51,685 - ERROR - File save failed for E:\os project\python\1185634.jpg: 2013 (HY000): Lost connection to MySQL server during query
+2025-04-13 17:27:51,691 - INFO - 127.0.0.1 - - [13/Apr/2025 17:27:51] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-13 17:27:51,706 - INFO - 127.0.0.1 - - [13/Apr/2025 17:27:51] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:27:57,802 - INFO - 127.0.0.1 - - [13/Apr/2025 17:27:57] "[35m[1mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg HTTP/1.1[0m" 500 -
+2025-04-13 17:27:58,352 - INFO - 127.0.0.1 - - [13/Apr/2025 17:27:58] "GET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-04-13 17:27:58,370 - INFO - 127.0.0.1 - - [13/Apr/2025 17:27:58] "GET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-04-13 17:27:58,738 - INFO - 127.0.0.1 - - [13/Apr/2025 17:27:58] "GET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=console.png&s=y3RffoOeJqH8C7OQzNFn HTTP/1.1" 200 -
+2025-04-13 17:27:59,006 - INFO - 127.0.0.1 - - [13/Apr/2025 17:27:59] "GET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-04-13 17:28:46,897 - INFO - 127.0.0.1 - - [13/Apr/2025 17:28:46] "GET /metadata/a.txt HTTP/1.1" 200 -
+2025-04-13 17:28:50,469 - INFO - 127.0.0.1 - - [13/Apr/2025 17:28:50] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:28:51,956 - INFO - 127.0.0.1 - - [13/Apr/2025 17:28:51] "GET /metadata/04126187bbd69eb1c2fcf20d8c47731e.jpg HTTP/1.1" 200 -
+2025-04-13 17:28:53,695 - INFO - 127.0.0.1 - - [13/Apr/2025 17:28:53] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:28:58,680 - INFO - 127.0.0.1 - - [13/Apr/2025 17:28:58] "GET /write HTTP/1.1" 200 -
+2025-04-13 17:29:05,216 - INFO - 127.0.0.1 - - [13/Apr/2025 17:29:05] "POST /write HTTP/1.1" 200 -
+2025-04-13 17:29:07,699 - INFO - 127.0.0.1 - - [13/Apr/2025 17:29:07] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:29:15,791 - INFO - 127.0.0.1 - - [13/Apr/2025 17:29:15] "[35m[1mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg HTTP/1.1[0m" 500 -
+2025-04-13 17:29:16,093 - INFO - 127.0.0.1 - - [13/Apr/2025 17:29:16] "[36mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-13 17:29:16,123 - INFO - 127.0.0.1 - - [13/Apr/2025 17:29:16] "[36mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-13 17:29:16,453 - INFO - 127.0.0.1 - - [13/Apr/2025 17:29:16] "[36mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=console.png&s=y3RffoOeJqH8C7OQzNFn HTTP/1.1[0m" 304 -
+2025-04-13 17:29:25,906 - INFO - 127.0.0.1 - - [13/Apr/2025 17:29:25] "[35m[1mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg HTTP/1.1[0m" 500 -
+2025-04-13 17:29:25,923 - INFO - 127.0.0.1 - - [13/Apr/2025 17:29:25] "[36mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-13 17:29:26,236 - INFO - 127.0.0.1 - - [13/Apr/2025 17:29:26] "[36mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-13 17:29:26,566 - INFO - 127.0.0.1 - - [13/Apr/2025 17:29:26] "[36mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=console.png&s=y3RffoOeJqH8C7OQzNFn HTTP/1.1[0m" 304 -
+2025-04-13 17:30:46,790 - INFO -  * Detected change in 'e:\\os project\\python\\o.py', reloading
+2025-04-13 17:30:47,002 - INFO -  * Restarting with stat
+2025-04-13 17:30:52,583 - INFO - Database and tables created successfully
+2025-04-13 17:30:52,611 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://172.22.120.135:5000
+2025-04-13 17:30:52,612 - INFO - [33mPress CTRL+C to quit[0m
+2025-04-13 17:30:52,614 - INFO -  * Restarting with stat
+2025-04-13 17:30:53,005 - INFO - Database and tables created successfully
+2025-04-13 17:30:53,023 - WARNING -  * Debugger is active!
+2025-04-13 17:30:53,026 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:30:56,606 - INFO - 127.0.0.1 - - [13/Apr/2025 17:30:56] "[32mGET / HTTP/1.1[0m" 302 -
+2025-04-13 17:30:56,615 - INFO - 127.0.0.1 - - [13/Apr/2025 17:30:56] "GET /login HTTP/1.1" 200 -
+2025-04-13 17:31:15,991 - INFO - 127.0.0.1 - - [13/Apr/2025 17:31:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-13 17:31:16,139 - INFO - 127.0.0.1 - - [13/Apr/2025 17:31:16] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:31:20,362 - INFO - 127.0.0.1 - - [13/Apr/2025 17:31:20] "[35m[1mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg HTTP/1.1[0m" 500 -
+2025-04-13 17:31:20,402 - INFO - 127.0.0.1 - - [13/Apr/2025 17:31:20] "[36mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-04-13 17:31:20,404 - INFO - 127.0.0.1 - - [13/Apr/2025 17:31:20] "[36mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-04-13 17:31:20,731 - INFO - 127.0.0.1 - - [13/Apr/2025 17:31:20] "GET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg?__debugger__=yes&cmd=resource&f=console.png&s=lCpJjv0nAyxZL7IEiXNV HTTP/1.1" 200 -
+2025-04-13 17:34:28,405 - INFO -  * Detected change in 'e:\\os project\\python\\o.py', reloading
+2025-04-13 17:34:28,472 - INFO -  * Restarting with stat
+2025-04-13 17:34:29,059 - INFO - Database and tables created successfully
+2025-04-13 17:34:29,084 - WARNING -  * Debugger is active!
+2025-04-13 17:34:29,088 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:34:32,487 - INFO - 127.0.0.1 - - [13/Apr/2025 17:34:32] "[32mGET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg HTTP/1.1[0m" 302 -
+2025-04-13 17:34:32,492 - INFO - 127.0.0.1 - - [13/Apr/2025 17:34:32] "GET /login HTTP/1.1" 200 -
+2025-04-13 17:35:07,982 - INFO - 127.0.0.1 - - [13/Apr/2025 17:35:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-13 17:35:08,156 - INFO - 127.0.0.1 - - [13/Apr/2025 17:35:08] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:35:10,307 - INFO - 127.0.0.1 - - [13/Apr/2025 17:35:10] "GET /read/04126187bbd69eb1c2fcf20d8c47731e.jpg HTTP/1.1" 200 -
+2025-04-13 17:35:12,308 - INFO - Cleaned up temporary file: C:\Users\deepm\AppData\Local\Temp\tmpyjcoon1d.jpg
+2025-04-13 17:35:17,562 - ERROR - File share failed for 04126187bbd69eb1c2fcf20d8c47731e.jpg: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`file_system_db`.`shared_files`, CONSTRAINT `shared_files_ibfk_1` FOREIGN KEY (`shared_with`) REFERENCES `users` (`username`))
+2025-04-13 17:35:17,563 - INFO - 127.0.0.1 - - [13/Apr/2025 17:35:17] "POST /share/04126187bbd69eb1c2fcf20d8c47731e.jpg HTTP/1.1" 200 -
+2025-04-13 17:35:22,464 - ERROR - File share failed for 04126187bbd69eb1c2fcf20d8c47731e.jpg: 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`file_system_db`.`shared_files`, CONSTRAINT `shared_files_ibfk_1` FOREIGN KEY (`shared_with`) REFERENCES `users` (`username`))
+2025-04-13 17:35:22,465 - INFO - 127.0.0.1 - - [13/Apr/2025 17:35:22] "POST /share/04126187bbd69eb1c2fcf20d8c47731e.jpg HTTP/1.1" 200 -
+2025-04-13 17:36:09,913 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by manudeep
+2025-04-13 17:36:09,914 - INFO - 127.0.0.1 - - [13/Apr/2025 17:36:09] "[32mGET /delete/04126187bbd69eb1c2fcf20d8c47731e.jpg HTTP/1.1[0m" 302 -
+2025-04-13 17:36:10,209 - INFO - 127.0.0.1 - - [13/Apr/2025 17:36:10] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:36:13,798 - INFO - 127.0.0.1 - - [13/Apr/2025 17:36:13] "GET /metadata/a.txt HTTP/1.1" 200 -
+2025-04-13 17:36:17,089 - INFO - 127.0.0.1 - - [13/Apr/2025 17:36:17] "GET /write HTTP/1.1" 200 -
+2025-04-13 17:36:24,464 - INFO - File a.txt written by manudeep
+2025-04-13 17:36:24,464 - INFO - 127.0.0.1 - - [13/Apr/2025 17:36:24] "[32mPOST /write HTTP/1.1[0m" 302 -
+2025-04-13 17:36:24,781 - INFO - 127.0.0.1 - - [13/Apr/2025 17:36:24] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:36:26,731 - INFO - 127.0.0.1 - - [13/Apr/2025 17:36:26] "GET /read/a.txt HTTP/1.1" 200 -
+2025-04-13 17:36:29,961 - INFO - 127.0.0.1 - - [13/Apr/2025 17:36:29] "GET /read/a.txt HTTP/1.1" 200 -
+2025-04-13 17:37:36,665 - INFO -  * Detected change in 'e:\\os project\\python\\o.py', reloading
+2025-04-13 17:37:36,716 - INFO -  * Restarting with stat
+2025-04-13 17:37:37,297 - INFO - Database and tables created successfully
+2025-04-13 17:37:37,322 - WARNING -  * Debugger is active!
+2025-04-13 17:37:37,325 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:39:08,011 - INFO -  * Detected change in 'e:\\os project\\python\\o.py', reloading
+2025-04-13 17:39:08,091 - INFO -  * Restarting with stat
+2025-04-13 17:39:08,696 - INFO - Database and tables created successfully
+2025-04-13 17:39:08,719 - WARNING -  * Debugger is active!
+2025-04-13 17:39:08,721 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:39:15,684 - INFO - 127.0.0.1 - - [13/Apr/2025 17:39:15] "[32mGET /dashboard HTTP/1.1[0m" 302 -
+2025-04-13 17:39:15,699 - INFO - 127.0.0.1 - - [13/Apr/2025 17:39:15] "GET /login HTTP/1.1" 200 -
+2025-04-13 17:39:16,505 - INFO - 127.0.0.1 - - [13/Apr/2025 17:39:16] "GET /login HTTP/1.1" 200 -
+2025-04-13 17:39:40,326 - INFO - 127.0.0.1 - - [13/Apr/2025 17:39:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-13 17:39:40,483 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:39:40,494 - INFO - 127.0.0.1 - - [13/Apr/2025 17:39:40] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:39:51,104 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:39:51,107 - ERROR - Malware scan failed for 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.jpg: [Errno 2] No such file or directory: '360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.jpg'
+2025-04-13 17:39:51,140 - INFO - File E:\os project\python\360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.jpg encrypted successfully
+2025-04-13 17:39:51,164 - INFO - File E:\os project\python\360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.jpg uploaded and encrypted by manudeep
+2025-04-13 17:39:51,166 - INFO - 127.0.0.1 - - [13/Apr/2025 17:39:51] "[32mPOST /upload HTTP/1.1[0m" 302 -
+2025-04-13 17:39:51,176 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:39:51,182 - INFO - 127.0.0.1 - - [13/Apr/2025 17:39:51] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:39:54,081 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:39:54,087 - ERROR - Decryption failed: 
+2025-04-13 17:39:54,088 - INFO - 127.0.0.1 - - [13/Apr/2025 17:39:54] "[33mGET /read/360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j HTTP/1.1[0m" 404 -
+2025-04-13 17:40:26,929 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:40:26,935 - ERROR - Decryption failed: 
+2025-04-13 17:40:26,937 - INFO - 127.0.0.1 - - [13/Apr/2025 17:40:26] "[33mGET /read/360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j HTTP/1.1[0m" 404 -
+2025-04-13 17:42:12,523 - INFO -  * Detected change in 'e:\\os project\\python\\o.py', reloading
+2025-04-13 17:42:12,598 - INFO -  * Restarting with stat
+2025-04-13 17:42:13,281 - INFO - Database and tables created successfully
+2025-04-13 17:42:13,300 - WARNING -  * Debugger is active!
+2025-04-13 17:42:13,303 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:42:16,904 - INFO - 127.0.0.1 - - [13/Apr/2025 17:42:16] "[32mGET /read/360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j HTTP/1.1[0m" 302 -
+2025-04-13 17:42:16,914 - INFO - 127.0.0.1 - - [13/Apr/2025 17:42:16] "GET /login HTTP/1.1" 200 -
+2025-04-13 17:42:17,636 - INFO - 127.0.0.1 - - [13/Apr/2025 17:42:17] "GET /login HTTP/1.1" 200 -
+2025-04-13 17:42:41,319 - INFO - 127.0.0.1 - - [13/Apr/2025 17:42:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-13 17:42:41,485 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:42:41,494 - INFO - 127.0.0.1 - - [13/Apr/2025 17:42:41] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:42:44,809 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:42:44,819 - INFO - Decryption successful for encrypted data
+2025-04-13 17:42:44,820 - INFO - 127.0.0.1 - - [13/Apr/2025 17:42:44] "GET /read/a.txt HTTP/1.1" 200 -
+2025-04-13 17:42:48,017 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:42:48,021 - ERROR - Decryption failed for encrypted data: 
+2025-04-13 17:42:48,022 - ERROR - Read failed: Decryption failed for 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j
+2025-04-13 17:42:48,023 - INFO - 127.0.0.1 - - [13/Apr/2025 17:42:48] "[33mGET /read/360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j HTTP/1.1[0m" 404 -
+2025-04-13 17:43:01,326 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:43:01,332 - ERROR - Share failed for a.txt with : Unread result found
+2025-04-13 17:43:01,355 - INFO - 127.0.0.1 - - [13/Apr/2025 17:43:01] "POST /share/a.txt HTTP/1.1" 200 -
+2025-04-13 17:49:01,595 - INFO -  * Detected change in 'e:\\os project\\python\\o.py', reloading
+2025-04-13 17:49:01,669 - INFO -  * Restarting with stat
+2025-04-13 17:49:02,301 - INFO - Database and tables created successfully
+2025-04-13 17:49:02,323 - WARNING -  * Debugger is active!
+2025-04-13 17:49:02,325 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:50:32,127 - INFO - 127.0.0.1 - - [13/Apr/2025 17:50:32] "[32mPOST /share/a.txt HTTP/1.1[0m" 302 -
+2025-04-13 17:50:32,144 - INFO - 127.0.0.1 - - [13/Apr/2025 17:50:32] "GET /login HTTP/1.1" 200 -
+2025-04-13 17:50:55,390 - INFO - 127.0.0.1 - - [13/Apr/2025 17:50:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-04-13 17:50:55,527 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:50:55,577 - INFO - 127.0.0.1 - - [13/Apr/2025 17:50:55] "GET /dashboard HTTP/1.1" 200 -
+2025-04-13 17:51:08,281 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:51:08,293 - INFO - Decryption successful for encrypted data
+2025-04-13 17:51:08,294 - INFO - 127.0.0.1 - - [13/Apr/2025 17:51:08] "GET /read/a.txt HTTP/1.1" 200 -
+2025-04-13 17:51:13,285 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:51:13,290 - ERROR - Decryption failed for encrypted data: 
+2025-04-13 17:51:13,290 - ERROR - Read failed: Decryption failed for 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j
+2025-04-13 17:51:13,291 - INFO - 127.0.0.1 - - [13/Apr/2025 17:51:13] "[33mGET /read/360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j HTTP/1.1[0m" 404 -
+2025-04-13 17:51:33,781 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:51:33,786 - ERROR - Share failed for a.txt with user: Unread result found
+2025-04-13 17:51:33,801 - INFO - 127.0.0.1 - - [13/Apr/2025 17:51:33] "POST /share/a.txt HTTP/1.1" 200 -
+2025-04-13 17:51:53,611 - INFO - FileManager initialized for manudeep with encryption key
+2025-04-13 17:51:53,618 - ERROR - Share failed for a.txt with user: Unread result found
+2025-04-13 17:51:53,640 - INFO - 127.0.0.1 - - [13/Apr/2025 17:51:53] "POST /share/a.txt HTTP/1.1" 200 -
+2025-04-13 17:52:28,043 - INFO -  * Detected change in 'e:\\os project\\python\\o.py', reloading
+2025-04-13 17:52:28,108 - INFO -  * Restarting with stat
+2025-04-13 17:52:28,663 - INFO - Database and tables created successfully
+2025-04-13 17:52:28,685 - WARNING -  * Debugger is active!
+2025-04-13 17:52:28,688 - INFO -  * Debugger PIN: 463-745-003
+2025-04-13 17:52:33,776 - INFO -  * Detected change in 'e:\\os project\\python\\o.py', reloading
+2025-04-13 17:52:33,820 - INFO -  * Restarting with stat
+2025-04-13 17:52:58,412 - INFO - Database and tables created successfully
+2025-04-13 17:53:19,396 - INFO - User manudeep authenticated successfully
+2025-04-13 17:53:27,355 - ERROR - Decryption failed: 
+2025-04-13 17:53:30,910 - INFO - File a.txt decrypted and opened by manudeep
+2025-04-13 17:53:40,912 - INFO - File 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j deleted by manudeep
+2025-04-13 17:53:49,502 - ERROR - File save failed for C:/Users/deepm/OneDrive/Pictures/1185634.jpg: 2013 (HY000): Lost connection to MySQL server during query
+2025-04-13 17:53:55,562 - INFO - File C:/Users/deepm/OneDrive/Pictures/360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.jpg uploaded by manudeep
+2025-04-13 17:54:01,394 - ERROR - Decryption failed: 
+2025-04-13 17:57:12,843 - INFO - Database and tables created successfully
+2025-04-13 17:57:39,082 - INFO - User manudeep authenticated successfully
+2025-04-13 18:04:01,438 - INFO - Database and tables created successfully
+2025-04-13 18:04:14,192 - INFO - Database and tables created successfully
+2025-04-13 18:04:51,372 - INFO - User manudeep authenticated successfully
+2025-04-13 18:04:58,574 - INFO - Database and tables created successfully
+2025-04-13 18:06:25,682 - INFO - Database and tables created successfully
+2025-04-13 18:06:50,875 - INFO - User manudeep authenticated successfully
+2025-04-13 18:08:43,479 - INFO - package: mysql.connector.plugins
+2025-04-13 18:08:43,479 - INFO - plugin_name: mysql_native_password
+2025-04-13 18:08:43,483 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-13 18:08:43,489 - INFO - Database and tables created successfully
+2025-04-13 18:09:53,799 - INFO - User manudeep authenticated successfully
+2025-04-13 18:09:58,322 - INFO - package: mysql.connector.plugins
+2025-04-13 18:09:58,322 - INFO - plugin_name: mysql_native_password
+2025-04-13 18:09:58,324 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-13 18:09:58,328 - INFO - Database and tables created successfully
+2025-04-13 18:10:14,643 - INFO - User manudeep authenticated successfully
+2025-04-13 18:10:24,652 - ERROR - Decryption failed: 
+2025-04-13 18:10:28,208 - INFO - File 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j deleted by manudeep
+2025-04-13 18:10:31,737 - INFO - File a.txt decrypted and opened by manudeep
+2025-04-13 18:10:41,218 - ERROR - Delete failed for a.txt: Unread result found
+2025-04-13 18:10:45,647 - ERROR - Delete failed for a.txt: Unread result found
+2025-04-13 18:11:00,656 - INFO - File hi.txt written by manudeep
+2025-04-13 18:11:04,887 - INFO - File hi.txt decrypted and opened by manudeep
+2025-04-13 18:11:10,695 - INFO - File hi.txt deleted by manudeep
+2025-04-13 18:13:35,655 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-13 18:13:42,514 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-13 18:13:49,606 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by manudeep
+2025-04-13 18:13:53,105 - ERROR - Delete failed for a.txt: Unread result found
+2025-04-13 18:13:58,117 - ERROR - Delete failed for a.txt: Unread result found
+2025-04-13 18:14:01,883 - INFO - User logged out
+2025-04-13 18:17:34,343 - INFO - package: mysql.connector.plugins
+2025-04-13 18:17:34,343 - INFO - plugin_name: mysql_native_password
+2025-04-13 18:17:34,345 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-13 18:17:34,351 - INFO - Database and tables created successfully
+2025-04-13 18:18:37,955 - INFO - User manudeep authenticated successfully
+2025-04-13 18:18:43,346 - INFO - File a.txt decrypted and opened by manudeep
+2025-04-13 18:18:54,016 - ERROR - Delete failed for a.txt: Unread result found
+2025-04-13 18:19:10,518 - INFO - File a.txt shared with user by manudeep
+2025-04-13 18:19:13,256 - INFO - User logged out
+2025-04-13 18:19:54,317 - WARNING - Authentication failed for user
+2025-04-13 18:20:04,798 - WARNING - Authentication failed for user
+2025-04-13 18:20:12,188 - INFO - User user authenticated successfully
+2025-04-13 18:20:23,956 - INFO - User logged out
+2025-04-13 18:24:50,744 - INFO - Database and tables created successfully
+2025-04-13 18:25:17,840 - INFO - User manudeep authenticated successfully
+2025-04-13 18:25:22,534 - INFO - File a.txt decrypted and opened by manudeep
+2025-04-13 18:25:30,317 - ERROR - Delete failed for a.txt: Unread result found
+2025-04-13 18:25:39,913 - INFO - User logged out
+2025-04-13 18:32:43,522 - INFO - Database and tables created successfully
+2025-04-13 18:33:09,678 - INFO - User manudeep authenticated successfully
+2025-04-13 18:33:19,008 - INFO - File hi.txt shared with user by manudeep
+2025-04-13 18:33:21,407 - INFO - User logged out
+2025-04-13 18:33:50,252 - INFO - User user authenticated successfully
+2025-04-13 18:35:59,133 - INFO - Database and tables created successfully
+2025-04-13 18:36:01,809 - ERROR - Application startup failed: Invalid session token
+2025-04-13 18:36:04,601 - INFO - Database and tables created successfully
+2025-04-13 18:36:07,736 - ERROR - Application startup failed: Invalid session token
+2025-04-13 18:36:29,448 - INFO - Database and tables created successfully
+2025-04-13 18:36:31,734 - ERROR - Application startup failed: Invalid session token
+2025-04-13 18:37:14,311 - INFO - Database and tables created successfully
+2025-04-13 18:38:07,070 - INFO - Database and tables created successfully
+2025-04-13 18:38:13,847 - INFO - All files cleared from database
+2025-04-13 18:39:47,261 - INFO - Database and tables created successfully
+2025-04-13 18:40:09,510 - INFO - User manudeep authenticated successfully
+2025-04-13 18:40:32,606 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-13 18:40:42,602 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg shared with user by manudeep
+2025-04-13 18:40:45,649 - INFO - User logged out
+2025-04-13 18:41:05,447 - INFO - User user authenticated successfully
+2025-04-13 18:41:11,028 - ERROR - Decryption failed: 
+2025-04-13 18:41:17,023 - ERROR - Decryption failed: 
+2025-04-13 18:42:27,440 - INFO - User logged out
+2025-04-13 18:42:42,450 - INFO - Database and tables created successfully
+2025-04-13 18:43:08,685 - INFO - User user authenticated successfully
+2025-04-13 18:43:14,047 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-13 18:43:28,340 - INFO - File C:/Users/deepm/OneDrive/Pictures/15544942-wooden-boat-on-water.jpg uploaded by user
+2025-04-13 18:43:33,219 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-13 18:43:38,949 - ERROR - Read failed for 15544942-wooden-boat-on-water.jpg: 
+2025-04-13 18:43:43,708 - ERROR - Read failed for 15544942-wooden-boat-on-water.jpg: 
+2025-04-13 18:43:47,266 - INFO - File 15544942-wooden-boat-on-water.jpg deleted by user
+2025-04-13 18:43:55,034 - INFO - File C:/Users/deepm/OneDrive/Pictures/png-clipart-claire-holt-assets/Background.png uploaded by user
+2025-04-13 18:44:00,615 - ERROR - Read failed for Background.png: 
+2025-04-13 18:44:10,916 - INFO - File Background.png deleted by user
+2025-04-13 18:44:30,950 - ERROR - File save failed for C:/Users/deepm/OneDrive/Pictures/IMG_20231101_204739.jpg: 2013 (HY000): Lost connection to MySQL server during query
+2025-04-13 18:44:39,949 - ERROR - File save failed for C:/Users/deepm/OneDrive/Pictures/wallpaperflare-cropped.jpg: 1153 (08S01): Got a packet bigger than 'max_allowed_packet' bytes
+2025-04-13 18:44:48,201 - INFO - File C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg uploaded by user
+2025-04-13 18:44:53,644 - INFO - File shelby-company-ltd-notorious-media.jpg decrypted and opened by user
+2025-04-13 18:51:24,820 - INFO - File shelby-company-ltd-notorious-media.jpg decrypted and opened by user
+2025-04-13 18:51:31,338 - INFO - Database and tables created successfully
+2025-04-13 18:51:53,577 - INFO - User user authenticated successfully
+2025-04-13 18:51:59,421 - INFO - File C:/Users/deepm/OneDrive/Pictures/png-clipart-claire-holt-assets/Background.png uploaded by user
+2025-04-13 18:52:04,070 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-13 18:52:09,846 - ERROR - Decryption failed for Background.png: 
+2025-04-13 18:53:13,204 - INFO - User logged out
+2025-04-13 18:53:20,177 - INFO - Database and tables created successfully
+2025-04-13 18:53:37,825 - INFO - User user authenticated successfully
+2025-04-13 18:53:44,246 - ERROR - Decryption failed for Background.png: 
+2025-04-13 18:54:06,988 - INFO - File C:/Users/deepm/OneDrive/Pictures/png-clipart-claire-holt-assets/Background.png uploaded by user
+2025-04-13 18:54:13,381 - ERROR - Read failed for Background.png: Unread result found
+2025-04-13 18:54:16,514 - ERROR - Read failed for Background.png: Unread result found
+2025-04-13 18:54:21,149 - ERROR - Delete failed for Background.png: Unread result found
+2025-04-13 18:59:35,071 - ERROR - Read failed for Background.png: Unread result found
+2025-04-13 18:59:38,299 - INFO - User logged out
+2025-04-13 18:59:44,640 - INFO - Database and tables created successfully
+2025-04-13 19:01:06,335 - INFO - User user authenticated successfully
+2025-04-13 19:01:10,698 - ERROR - Read failed for Background.png: Unread result found
+2025-04-13 19:01:14,517 - ERROR - Delete failed for Background.png: Unread result found
+2025-04-13 19:01:20,658 - INFO - File C:/Users/deepm/OneDrive/Pictures/png-clipart-claire-holt-assets/Background.png uploaded by user
+2025-04-13 19:01:30,333 - INFO - File C:/Users/deepm/OneDrive/Pictures/360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.jpg uploaded by user
+2025-04-13 19:01:35,296 - ERROR - Decryption failed for 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j: 
+2025-04-13 19:01:37,679 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-13 19:03:33,130 - INFO - User logged out
+2025-04-13 19:04:00,040 - INFO - Database and tables created successfully
+2025-04-13 19:04:36,093 - INFO - User user authenticated successfully
+2025-04-13 19:04:52,688 - ERROR - Decryption failed for 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j: 
+2025-04-13 19:04:56,176 - ERROR - Decryption failed for Background.png: 
+2025-04-13 19:05:05,797 - INFO - File shelby-company-ltd-notorious-media.jpg decrypted and opened by user
+2025-04-13 19:05:13,018 - INFO - File shelby-company-ltd-notorious-media.jpg deleted by user
+2025-04-13 19:05:16,951 - INFO - File 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j deleted by user
+2025-04-13 19:05:21,912 - INFO - File Background.png deleted by user
+2025-04-13 19:05:34,474 - INFO - File C:/Users/deepm/OneDrive/Pictures/png-clipart-claire-holt-assets/Background.png uploaded by user
+2025-04-13 19:05:41,351 - ERROR - Decryption failed for Background.png: 
+2025-04-13 19:06:48,067 - ERROR - Decryption failed for Background.png: 
+2025-04-13 19:06:52,608 - INFO - File Background.png deleted by user
+2025-04-13 19:06:55,405 - INFO - User logged out
+2025-04-13 19:07:02,857 - INFO - Database and tables created successfully
+2025-04-13 19:07:30,185 - WARNING - Authentication failed for user
+2025-04-13 19:07:39,835 - INFO - User user authenticated successfully
+2025-04-13 19:07:53,472 - INFO - File C:/Users/deepm/OneDrive/Pictures/png-clipart-claire-holt-assets/Background.png uploaded by user
+2025-04-13 19:08:01,978 - ERROR - Decryption failed for Background.png: 
+2025-04-13 19:08:07,713 - INFO - File Background.png deleted by user
+2025-04-13 19:08:43,097 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-13 19:13:43,110 - INFO - Temporary file C:\Users\deepm\AppData\Local\Temp\temp_500a8207.jpg cleaned up
+2025-04-13 19:14:32,883 - INFO - User logged out
+2025-04-13 19:14:50,532 - INFO - User user authenticated successfully
+2025-04-13 19:15:05,190 - INFO - Database and tables created successfully
+2025-04-13 19:15:19,958 - INFO - User user authenticated successfully
+2025-04-13 19:15:24,717 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-13 19:15:30,113 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by user
+2025-04-13 19:15:34,967 - INFO - User logged out

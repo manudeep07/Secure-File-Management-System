@@ -1,0 +1,19 @@
+2025-04-13 18:28:32,218 - INFO - Database and tables created successfully
+2025-04-13 18:28:54,356 - WARNING - Authentication failed for manudeep
+2025-04-13 18:29:27,744 - INFO - User manudeep authenticated successfully
+2025-04-13 18:29:37,679 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-13 18:29:48,039 - INFO - File hi.txt written by manudeep
+2025-04-13 18:29:53,266 - INFO - File hi.txt decrypted and opened by manudeep
+2025-04-13 18:29:58,492 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-13 18:30:13,585 - INFO - File hi.txt shared with user by manudeep
+2025-04-13 18:30:16,155 - INFO - User logged out
+2025-04-13 18:30:36,567 - INFO - User user authenticated successfully
+2025-04-13 18:31:08,597 - INFO - File C:/Users/deepm/OneDrive/Pictures/4ChannelRelayMakerBazar2_700x.webp uploaded by user
+2025-04-13 18:31:15,068 - ERROR - Decryption failed: 
+2025-04-13 18:31:18,547 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-13 18:31:24,591 - INFO - File 4ChannelRelayMakerBazar2_700x.webp deleted by user
+2025-04-13 18:31:29,517 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by user
+2025-04-13 18:31:42,106 - INFO - User logged out
+2025-04-13 19:16:12,270 - INFO - Database and tables created successfully
+2025-04-13 19:16:26,393 - INFO - User user authenticated successfully
+2025-04-13 19:16:30,716 - INFO - User logged out
