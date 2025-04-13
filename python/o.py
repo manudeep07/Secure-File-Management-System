@@ -306,7 +306,143 @@ class FileManager:
             if 'conn' in locals():
                 conn.close()
 
-    
+    def share_file(self, filename, share_with):
+        share_with = sanitize_input(share_with)
+        try:
+            conn = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="",
+                database="file_system_db"
+            )
+            cursor = conn.cursor()
+            cursor.execute('INSERT INTO shared_files (filename, shared_with) VALUES (%s, %s)', (filename, share_with))
+            conn.commit()
+            messagebox.showinfo("Success", f"File shared with {share_with}")
+            logging.info(f"File {filename} shared with {share_with} by {self.username}")
+        except mysql.connector.Error as err:
+            messagebox.showerror("Error", f"Database error: {err}")
+            logging.error(f"File share failed for {filename}: {err}")
+        finally:
+            if 'conn' in locals():
+                conn.close()
+
+    def read_file(self, filename):
+        try:
+            conn = mysql.connector.connect(
+                host="localhost",
+                user="root",
+                password="",
+                database="file_system_db"
+            )
+            cursor = conn.cursor(buffered=True)
+            
+            # First check if user owns the file
+            cursor.execute('SELECT encrypted_data, owner FROM files WHERE filename=%s AND owner=%s', (filename, self.username))
+            data = cursor.fetchone()
+            
+            # If not found, check if file is shared with user
+            if not data:
+                cursor.execute('''
+                    SELECT f.encrypted_data, f.owner 
+                    FROM files f
+                    JOIN shared_files sf ON f.filename = sf.filename
+                    WHERE f.filename=%s AND sf.shared_with=%s
+                ''', (filename, self.username))
+                data = cursor.fetchone()
+            
+            if not data:
+                messagebox.showerror("Error", "File not found or access denied!")
+                return
+
+            # Get the owner's encryption key
+            cursor.execute('SELECT encryption_key FROM users WHERE username=%s', (data[1],))
+            key_data = cursor.fetchone()
+            if not key_data:
+                messagebox.showerror("Error", "Could not retrieve encryption key!")
+                return
+                
+            owner_key = key_data[0]
+            owner_cipher = Fernet(owner_key)
+
+            # Prompt user to confirm decryption
+            confirm = messagebox.askyesno("Decrypt File", f"The file '{filename}' is encrypted. Do you want to decrypt and view it?")
+            if not confirm:
+                logging.info(f"User {self.username} canceled decryption of {filename}")
+                return
+
+            # Use owner's cipher to decrypt
+            try:
+                encrypted_data = data[0]
+                if isinstance(encrypted_data, str):
+                    encrypted_data = encrypted_data.encode()
+                
+                decrypted = owner_cipher.decrypt(encrypted_data)
+                if not decrypted:
+                    messagebox.showerror("Error", "Decryption failed: No data returned")
+                    logging.error(f"Decryption failed for {filename}: No data returned")
+                    return
+            except Exception as e:
+                messagebox.showerror("Error", f"Decryption failed: {str(e)}")
+                logging.error(f"Decryption failed for {filename}: {str(e)}")
+                return
+
+            file_ext = os.path.splitext(filename)[1].lower()
+            if not file_ext:
+                file_ext = '.bin'
+
+            # Create a temporary file with the correct extension
+            try:
+                temp_dir = tempfile.gettempdir()
+                temp_path = os.path.join(temp_dir, f"temp_{os.urandom(4).hex()}{file_ext}")
+                
+                with open(temp_path, 'wb') as temp_file:
+                    temp_file.write(decrypted)
+                
+                system = platform.system()
+                if system == "Windows":
+                    os.startfile(temp_path)
+                elif system == "Darwin":  # macOS
+                    subprocess.run(["open", temp_path], check=True)
+                elif system == "Linux":
+                    subprocess.run(["xdg-open", temp_path], check=True)
+                else:
+                    messagebox.showwarning("Warning", f"Unsupported OS: {system}. File saved as {temp_path}")
+                
+                # Log success
+                logging.info(f"File {filename} decrypted and opened by {self.username}")
+                
+                # Schedule file cleanup after a delay (e.g., 5 minutes)
+                def cleanup_temp_file():
+                    try:
+                        if os.path.exists(temp_path):
+                            os.remove(temp_path)
+                            logging.info(f"Temporary file {temp_path} cleaned up")
+                    except Exception as e:
+                        logging.error(f"Failed to cleanup temporary file {temp_path}: {e}")
+                
+                self.app.root.after(300000, cleanup_temp_file)  # 300000ms = 5 minutes
+                
+            except Exception as e:
+                messagebox.showerror("Error", f"Failed to open file: {str(e)}")
+                logging.error(f"Failed to handle file {filename}: {str(e)}")
+                if os.path.exists(temp_path):
+                    try:
+                        os.remove(temp_path)
+                    except:
+                        pass
+                return
+
+        except mysql.connector.Error as err:
+            messagebox.showerror("Error", f"Database error: {err}")
+            logging.error(f"Read failed for {filename}: {err}")
+        except Exception as e:
+            messagebox.showerror("Error", f"Unexpected error: {str(e)}")
+            logging.error(f"Read failed for {filename}: {str(e)}")
+        finally:
+            if 'conn' in locals():
+                conn.close()
+
 if __name__ == "__main__":
     try:
         setup_database()
