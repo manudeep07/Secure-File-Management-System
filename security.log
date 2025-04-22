@@ -21,3 +21,245 @@
 2025-04-22 19:23:32,544 - INFO - plugin_name: mysql_native_password
 2025-04-22 19:23:32,546 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
 2025-04-22 19:23:32,553 - INFO - Database and tables created successfully
+2025-04-22 19:25:27,876 - INFO - package: mysql.connector.plugins
+2025-04-22 19:25:27,877 - INFO - plugin_name: mysql_native_password
+2025-04-22 19:25:27,879 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 19:25:27,993 - INFO - Database and tables created successfully
+2025-04-22 19:25:42,449 - INFO - User user registered successfully
+2025-04-22 19:27:03,220 - WARNING - Authentication failed for user
+2025-04-22 19:27:10,284 - INFO - User user authenticated successfully
+2025-04-22 19:27:12,379 - INFO - User logged out
+2025-04-22 19:27:37,459 - INFO - User user2 registered successfully
+2025-04-22 19:29:27,270 - INFO - User user2 authenticated successfully
+2025-04-22 19:29:31,562 - INFO - User logged out
+2025-04-22 19:29:52,336 - INFO - User harish registered successfully
+2025-04-22 19:32:07,785 - INFO - User harish authenticated successfully
+2025-04-22 19:33:08,370 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by harish
+2025-04-22 19:33:41,064 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg shared with user by harish
+2025-04-22 19:33:43,735 - INFO - User logged out
+2025-04-22 19:34:16,639 - INFO - User user authenticated successfully
+2025-04-22 19:34:44,222 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by user
+2025-04-22 19:34:53,344 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg shared with harish by user
+2025-04-22 19:34:55,638 - INFO - User logged out
+2025-04-22 19:35:12,981 - INFO - User harish authenticated successfully
+2025-04-22 19:35:16,303 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by harish
+2025-04-22 19:35:20,621 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by harish
+2025-04-22 19:35:26,464 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by harish
+2025-04-22 19:35:37,299 - INFO - File C:/Users/deepm/OneDrive/Pictures/360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.jpg uploaded by harish
+2025-04-22 19:35:47,277 - ERROR - Decryption failed: 
+2025-04-22 19:35:50,985 - INFO - File 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j deleted by harish
+2025-04-22 19:36:44,314 - INFO - File C:/Users/deepm/OneDrive/Pictures/360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.jpg uploaded by harish
+2025-04-22 19:36:48,112 - ERROR - Decryption failed: 
+2025-04-22 19:36:51,581 - INFO - File 360_F_418140711_17MABqvsHliakAlXlZy0vFnZkUBZos6g.j deleted by harish
+2025-04-22 19:36:59,854 - ERROR - File save failed for C:/Users/deepm/OneDrive/Pictures/1185634.jpg: 1153 (08S01): Got a packet bigger than 'max_allowed_packet' bytes
+2025-04-22 19:37:08,336 - INFO - File C:/Users/deepm/OneDrive/Pictures/bluetooth-module-hc-05-buy-india-400x400.jpg uploaded by harish
+2025-04-22 19:37:10,863 - INFO - File bluetooth-module-hc-05-buy-india-400x400.jpg decrypted and opened by harish
+2025-04-22 19:37:21,536 - INFO - File bluetooth-module-hc-05-buy-india-400x400.jpg shared with user by harish
+2025-04-22 19:37:25,993 - INFO - User logged out
+2025-04-22 19:37:45,075 - INFO - User user authenticated successfully
+2025-04-22 19:37:56,361 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-22 19:38:01,426 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by user
+2025-04-22 19:38:18,999 - INFO - File C:/Users/deepm/OneDrive/Pictures/arduino-uno-ch340.jpg uploaded by user
+2025-04-22 19:38:26,551 - ERROR - Decryption failed: 
+2025-04-22 19:38:29,978 - INFO - File arduino-uno-ch340.jpg deleted by user
+2025-04-22 19:38:42,014 - INFO - File C:/Users/deepm/OneDrive/Pictures/wp2915715-breaking-bad-wallpaper-hd.jpg uploaded by user
+2025-04-22 19:38:46,656 - ERROR - Decryption failed: 
+2025-04-22 19:39:00,750 - INFO - File C:/Users/deepm/OneDrive/Pictures/tud_crab-S01E01_orange.webp uploaded by user
+2025-04-22 19:39:05,865 - ERROR - Decryption failed: 
+2025-04-22 19:39:12,734 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by user
+2025-04-22 19:39:16,015 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-22 19:39:20,885 - INFO - File wp2915715-breaking-bad-wallpaper-hd.jpg deleted by user
+2025-04-22 19:39:23,299 - INFO - File tud_crab-S01E01_orange.webp deleted by user
+2025-04-22 19:39:25,601 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by user
+2025-04-22 19:39:47,332 - INFO - File C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg uploaded by user
+2025-04-22 19:39:50,284 - INFO - File shelby-company-ltd-notorious-media.jpg decrypted and opened by user
+2025-04-22 19:40:14,563 - INFO - File shelby-company-ltd-notorious-media.jpg decrypted and opened by user
+2025-04-22 19:40:24,575 - INFO - File shelby-company-ltd-notorious-media.jpg shared with harish by user
+2025-04-22 19:40:30,101 - INFO - User logged out
+2025-04-22 19:40:50,532 - INFO - User harish authenticated successfully
+2025-04-22 19:41:00,216 - INFO - User logged out
+2025-04-22 19:45:23,514 - INFO - package: mysql.connector.plugins
+2025-04-22 19:45:23,514 - INFO - plugin_name: mysql_native_password
+2025-04-22 19:45:23,517 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 19:45:23,525 - INFO - Database and tables created successfully
+2025-04-22 19:46:03,604 - WARNING - Authentication failed for user
+2025-04-22 19:46:11,348 - INFO - User user authenticated successfully
+2025-04-22 19:46:17,442 - INFO - User logged out
+2025-04-22 20:17:21,874 - INFO - package: mysql.connector.plugins
+2025-04-22 20:17:21,875 - INFO - plugin_name: mysql_native_password
+2025-04-22 20:17:21,876 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 20:17:21,918 - INFO - Database and tables created successfully
+2025-04-22 20:38:27,550 - INFO - User user registered successfully
+2025-04-22 20:39:16,151 - INFO - User user authenticated successfully
+2025-04-22 20:39:17,814 - INFO - User logged out
+2025-04-22 20:40:09,037 - INFO - User manudeep registered successfully
+2025-04-22 20:45:05,457 - WARNING - Authentication failed for manudeep
+2025-04-22 20:45:13,527 - INFO - User manudeep authenticated successfully
+2025-04-22 20:45:22,621 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 20:45:24,662 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-22 20:45:35,835 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg shared with user by manudeep
+2025-04-22 20:45:39,476 - INFO - User logged out
+2025-04-22 20:45:55,760 - INFO - User user authenticated successfully
+2025-04-22 20:54:33,088 - INFO - User logged out
+2025-04-22 20:55:49,165 - INFO - package: mysql.connector.plugins
+2025-04-22 20:55:49,165 - INFO - plugin_name: mysql_native_password
+2025-04-22 20:55:49,168 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 20:55:49,178 - INFO - Database and tables created successfully
+2025-04-22 20:56:16,866 - INFO - User user authenticated successfully
+2025-04-22 20:58:30,655 - INFO - package: mysql.connector.plugins
+2025-04-22 20:58:30,655 - INFO - plugin_name: mysql_native_password
+2025-04-22 20:58:30,657 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 20:58:30,664 - INFO - Database and tables created successfully
+2025-04-22 20:58:57,152 - INFO - User user authenticated successfully
+2025-04-22 20:59:01,360 - ERROR - Decryption failed: 
+2025-04-22 20:59:23,038 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 20:59:25,076 - INFO - File C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg uploaded by user
+2025-04-22 20:59:28,305 - INFO - File shelby-company-ltd-notorious-media.jpg decrypted and opened by user
+2025-04-22 20:59:50,659 - INFO - File shelby-company-ltd-notorious-media.jpg shared with manudeep by user
+2025-04-22 20:59:56,569 - INFO - User logged out
+2025-04-22 21:00:13,629 - INFO - User manudeep authenticated successfully
+2025-04-22 21:00:18,305 - ERROR - Decryption failed: 
+2025-04-22 21:00:19,843 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-22 21:02:14,268 - INFO - package: mysql.connector.plugins
+2025-04-22 21:02:14,268 - INFO - plugin_name: mysql_native_password
+2025-04-22 21:02:14,270 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 21:02:14,371 - INFO - Database and tables created successfully
+2025-04-22 21:02:32,613 - INFO - User user registered successfully
+2025-04-22 21:03:28,433 - INFO - User user authenticated successfully
+2025-04-22 21:03:36,412 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 21:03:38,270 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by user
+2025-04-22 21:03:42,148 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-22 21:03:49,677 - INFO - User logged out
+2025-04-22 21:04:02,387 - INFO - User manudeep registered successfully
+2025-04-22 21:04:53,090 - INFO - User manudeep authenticated successfully
+2025-04-22 21:05:07,172 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 21:05:08,900 - INFO - File C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg uploaded by manudeep
+2025-04-22 21:05:12,072 - INFO - File shelby-company-ltd-notorious-media.jpg decrypted and opened by manudeep
+2025-04-22 21:05:25,123 - INFO - File shelby-company-ltd-notorious-media.jpg shared with user by manudeep
+2025-04-22 21:05:28,530 - INFO - User logged out
+2025-04-22 21:05:46,912 - INFO - User user authenticated successfully
+2025-04-22 21:05:51,790 - ERROR - Decryption failed: 
+2025-04-22 21:12:23,866 - INFO - package: mysql.connector.plugins
+2025-04-22 21:12:23,866 - INFO - plugin_name: mysql_native_password
+2025-04-22 21:12:23,868 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 21:12:23,957 - INFO - Database and tables created successfully
+2025-04-22 21:12:44,170 - INFO - User user registered successfully
+2025-04-22 21:13:27,080 - INFO - User user authenticated successfully
+2025-04-22 21:13:34,269 - INFO - User logged out
+2025-04-22 21:13:44,034 - INFO - User manudeep registered successfully
+2025-04-22 21:14:29,668 - INFO - User manudeep authenticated successfully
+2025-04-22 21:14:35,116 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 21:14:36,757 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-22 21:14:44,601 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg shared with user by manudeep
+2025-04-22 21:14:48,970 - INFO - User logged out
+2025-04-22 21:15:07,335 - INFO - User user authenticated successfully
+2025-04-22 21:15:11,657 - ERROR - Decryption failed: 
+2025-04-22 21:15:13,354 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user decrypted and opened by user
+2025-04-22 21:15:22,777 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user decrypted and opened by user
+2025-04-22 21:15:29,707 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user deleted by user
+2025-04-22 21:55:12,822 - ERROR - Decryption failed: 
+2025-04-22 21:55:16,724 - ERROR - Decryption failed: 
+2025-04-22 21:55:25,530 - INFO - User logged out
+2025-04-22 22:05:13,783 - INFO - package: mysql.connector.plugins
+2025-04-22 22:05:13,783 - INFO - plugin_name: mysql_native_password
+2025-04-22 22:05:13,786 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 22:05:13,848 - INFO - Database and tables created successfully
+2025-04-22 22:05:39,302 - INFO - User user registered successfully
+2025-04-22 22:06:25,603 - INFO - User user authenticated successfully
+2025-04-22 22:06:29,064 - INFO - User logged out
+2025-04-22 22:06:51,511 - INFO - User manudeep registered successfully
+2025-04-22 22:07:39,980 - INFO - User manudeep authenticated successfully
+2025-04-22 22:07:46,554 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 22:07:49,800 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-22 22:08:00,031 - INFO - File hello.txt written by manudeep
+2025-04-22 22:08:14,991 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg shared with user by manudeep
+2025-04-22 22:08:20,094 - INFO - File hello.txt shared with user by manudeep
+2025-04-22 22:08:23,481 - INFO - User logged out
+2025-04-22 22:08:40,546 - INFO - User user authenticated successfully
+2025-04-22 22:08:45,747 - ERROR - Decryption failed: 
+2025-04-22 22:08:49,070 - ERROR - Decryption failed: 
+2025-04-22 22:08:52,012 - INFO - File hello.txt_shared_with_user decrypted and opened by user
+2025-04-22 22:10:46,010 - ERROR - Decryption failed: 
+2025-04-22 22:16:32,966 - INFO - package: mysql.connector.plugins
+2025-04-22 22:16:32,966 - INFO - plugin_name: mysql_native_password
+2025-04-22 22:16:32,968 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 22:16:32,975 - INFO - Database and tables created successfully
+2025-04-22 22:16:58,972 - INFO - User user authenticated successfully
+2025-04-22 22:17:02,749 - ERROR - Decryption failed: 
+2025-04-22 22:17:08,502 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user deleted by user
+2025-04-22 22:17:11,816 - INFO - File hello.txt_shared_with_user deleted by user
+2025-04-22 22:17:28,742 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 22:17:36,954 - INFO - File C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg uploaded by user
+2025-04-22 22:19:18,068 - INFO - Decrypted data length for shelby-company-ltd-notorious-media.jpg: 28632 bytes
+2025-04-22 22:19:18,068 - INFO - Re-encrypted data length for shelby-company-ltd-notorious-media.jpg_shared_with_manudeep: 38264 bytes
+2025-04-22 22:19:19,261 - INFO - File shelby-company-ltd-notorious-media.jpg shared with manudeep by user
+2025-04-22 22:19:23,914 - INFO - User logged out
+2025-04-22 22:19:48,018 - INFO - User manudeep authenticated successfully
+2025-04-22 22:19:53,168 - ERROR - Decryption failed: 
+2025-04-22 22:19:56,801 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by manudeep
+2025-04-22 22:19:59,152 - INFO - File shelby-company-ltd-notorious-media.jpg_shared_with_manudeep deleted by manudeep
+2025-04-22 22:20:03,767 - INFO - File hello.txt deleted by manudeep
+2025-04-22 22:24:59,887 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/arduino-uno-ch340.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 22:25:01,381 - INFO - File C:/Users/deepm/OneDrive/Pictures/arduino-uno-ch340.jpg uploaded by manudeep
+2025-04-22 22:25:10,244 - ERROR - Decryption failed: 
+2025-04-22 22:25:10,245 - ERROR - Decryption failed during sharing for arduino-uno-ch340.jpg by manudeep
+2025-04-22 22:25:13,963 - INFO - User logged out
+2025-04-22 22:25:24,834 - INFO - package: mysql.connector.plugins
+2025-04-22 22:25:24,834 - INFO - plugin_name: mysql_native_password
+2025-04-22 22:25:24,836 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 22:25:24,841 - INFO - Database and tables created successfully
+2025-04-22 22:25:39,341 - INFO - User manudeep authenticated successfully
+2025-04-22 22:25:44,153 - ERROR - Decryption failed: 
+2025-04-22 22:25:46,589 - INFO - File arduino-uno-ch340.jpg deleted by manudeep
+2025-04-22 22:25:54,339 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/bluetooth-module-hc-05-buy-india-400x400.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 22:25:56,024 - INFO - File C:/Users/deepm/OneDrive/Pictures/bluetooth-module-hc-05-buy-india-400x400.jpg uploaded by manudeep
+2025-04-22 22:25:59,433 - INFO - File bluetooth-module-hc-05-buy-india-400x400.jpg decrypted and opened by manudeep
+2025-04-22 22:26:08,526 - INFO - Decrypted data length for bluetooth-module-hc-05-buy-india-400x400.jpg: 40952 bytes
+2025-04-22 22:26:08,527 - INFO - Re-encrypted data length for bluetooth-module-hc-05-buy-india-400x400.jpg_shared_with_user: 54692 bytes
+2025-04-22 22:26:09,687 - INFO - File bluetooth-module-hc-05-buy-india-400x400.jpg shared with user by manudeep
+2025-04-22 22:26:13,513 - INFO - User logged out
+2025-04-22 22:26:29,279 - INFO - User user authenticated successfully
+2025-04-22 22:26:34,044 - ERROR - Decryption failed: 
+2025-04-22 22:26:36,669 - INFO - File bluetooth-module-hc-05-buy-india-400x400.jpg_shared_with_user decrypted and opened by user
+2025-04-22 22:26:52,413 - INFO - File bluetooth-module-hc-05-buy-india-400x400.jpg deleted by user
+2025-04-22 22:26:54,752 - INFO - File bluetooth-module-hc-05-buy-india-400x400.jpg_shared_with_user deleted by user
+2025-04-22 22:27:02,504 - INFO - File shelby-company-ltd-notorious-media.jpg deleted by user
+2025-04-22 22:27:20,103 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/table.avif: could not connect to clamd server either by unix or network socket
+2025-04-22 22:27:21,796 - INFO - File C:/Users/deepm/OneDrive/Pictures/table.avif uploaded by user
+2025-04-22 22:27:25,007 - INFO - File table.avif decrypted and opened by user
+2025-04-22 22:27:34,221 - INFO - Decrypted data length for table.avif: 11090 bytes
+2025-04-22 22:27:34,222 - INFO - Re-encrypted data length for table.avif_shared_with_manudeep: 14884 bytes
+2025-04-22 22:27:35,827 - INFO - File table.avif shared with manudeep by user
+2025-04-22 22:27:38,251 - INFO - User logged out
+2025-04-22 22:27:56,667 - INFO - User manudeep authenticated successfully
+2025-04-22 22:28:01,525 - ERROR - Decryption failed: 
+2025-04-22 22:28:08,041 - INFO - File table.avif deleted by manudeep
+2025-04-22 22:28:12,552 - INFO - File table.avif_shared_with_manudeep deleted by manudeep
+2025-04-22 22:28:24,640 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 22:28:26,508 - INFO - File C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg uploaded by manudeep
+2025-04-22 22:28:32,311 - INFO - Decrypted data length for shelby-company-ltd-notorious-media.jpg: 28632 bytes
+2025-04-22 22:28:32,311 - INFO - Re-encrypted data length for shelby-company-ltd-notorious-media.jpg_shared_with_user: 38264 bytes
+2025-04-22 22:28:33,375 - INFO - File shelby-company-ltd-notorious-media.jpg shared with user by manudeep
+2025-04-22 22:28:35,990 - INFO - User logged out
+2025-04-22 22:28:51,971 - INFO - User user authenticated successfully
+2025-04-22 22:28:54,998 - INFO - File shelby-company-ltd-notorious-media.jpg_shared_with_user decrypted and opened by user
+2025-04-22 22:29:04,757 - ERROR - Decryption failed: 
+2025-04-22 22:29:15,244 - INFO - File shelby-company-ltd-notorious-media.jpg_shared_with_user deleted by user
+2025-04-22 22:29:17,345 - INFO - File shelby-company-ltd-notorious-media.jpg deleted by user
+2025-04-22 22:32:56,729 - INFO - package: mysql.connector.plugins
+2025-04-22 22:32:56,729 - INFO - plugin_name: mysql_native_password
+2025-04-22 22:32:56,730 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 22:32:56,735 - INFO - Database and tables created successfully
+2025-04-22 22:33:15,792 - INFO - User manudeep authenticated successfully
+2025-04-22 22:33:21,297 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 22:33:22,552 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-22 22:33:24,975 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-22 22:34:31,885 - INFO - Decrypted data length for 04126187bbd69eb1c2fcf20d8c47731e.jpg: 21288 bytes
+2025-04-22 22:34:31,886 - INFO - Re-encrypted data length for 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user: 28472 bytes
+2025-04-22 22:34:33,682 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg shared with user by manudeep
+2025-04-22 22:34:35,939 - INFO - User logged out
+2025-04-22 22:34:52,965 - INFO - User user authenticated successfully
+2025-04-22 22:34:55,386 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user decrypted and opened by user
+2025-04-22 22:34:58,537 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user decrypted and opened by user
+2025-04-22 22:35:16,886 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user decrypted and opened by user
+2025-04-22 22:35:26,492 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user decrypted and opened by user
