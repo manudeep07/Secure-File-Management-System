@@ -263,3 +263,74 @@
 2025-04-22 22:34:58,537 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user decrypted and opened by user
 2025-04-22 22:35:16,886 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user decrypted and opened by user
 2025-04-22 22:35:26,492 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg_shared_with_user decrypted and opened by user
+2025-04-22 23:06:06,330 - INFO - package: mysql.connector.plugins
+2025-04-22 23:06:06,330 - INFO - plugin_name: mysql_native_password
+2025-04-22 23:06:06,332 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 23:06:06,338 - INFO - Database and tables created successfully
+2025-04-22 23:06:36,635 - WARNING - Authentication failed for manudeep
+2025-04-22 23:06:44,892 - INFO - User manudeep authenticated successfully
+2025-04-22 23:26:28,784 - INFO - package: mysql.connector.plugins
+2025-04-22 23:26:28,785 - INFO - plugin_name: mysql_native_password
+2025-04-22 23:26:28,786 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 23:26:28,792 - INFO - Database and tables created successfully
+2025-04-22 23:26:35,445 - INFO - package: mysql.connector.plugins
+2025-04-22 23:26:35,445 - INFO - plugin_name: mysql_native_password
+2025-04-22 23:26:35,446 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 23:26:35,449 - INFO - Database and tables created successfully
+2025-04-22 23:27:08,065 - INFO - User manudeep authenticated successfully
+2025-04-22 23:27:16,902 - ERROR - Get files failed for manudeep: 1054 (42S22): Unknown column 'uploader' in 'where clause'
+2025-04-22 23:27:23,171 - ERROR - Get files failed for manudeep: 1054 (42S22): Unknown column 'uploader' in 'where clause'
+2025-04-22 23:30:52,049 - INFO - package: mysql.connector.plugins
+2025-04-22 23:30:52,049 - INFO - plugin_name: mysql_native_password
+2025-04-22 23:30:52,051 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 23:30:52,057 - INFO - Database and tables created successfully
+2025-04-22 23:31:10,838 - INFO - User manudeep authenticated successfully
+2025-04-22 23:31:15,925 - ERROR - Get files failed for manudeep: 1054 (42S22): Unknown column 'uploader' in 'where clause'
+2025-04-22 23:32:05,469 - INFO - package: mysql.connector.plugins
+2025-04-22 23:32:05,470 - INFO - plugin_name: mysql_native_password
+2025-04-22 23:32:05,471 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 23:32:05,512 - INFO - Database and tables created successfully
+2025-04-22 23:32:37,991 - INFO - User manudeep authenticated successfully
+2025-04-22 23:32:46,265 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 23:32:48,361 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-22 23:33:05,751 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/bluetooth-module-hc-05-buy-india-400x400.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 23:33:07,248 - INFO - File C:/Users/deepm/OneDrive/Pictures/bluetooth-module-hc-05-buy-india-400x400.jpg uploaded by manudeep
+2025-04-22 23:33:11,518 - INFO - File bluetooth-module-hc-05-buy-india-400x400.jpg decrypted and opened by manudeep
+2025-04-22 23:33:24,929 - ERROR - File share failed for bluetooth-module-hc-05-buy-india-400x400.jpg: 1054 (42S22): Unknown column 'shared_key' in 'field list'
+2025-04-22 23:34:01,958 - INFO - package: mysql.connector.plugins
+2025-04-22 23:34:01,958 - INFO - plugin_name: mysql_native_password
+2025-04-22 23:34:01,960 - INFO - AUTHENTICATION_PLUGIN_CLASS: MySQLNativePasswordAuthPlugin
+2025-04-22 23:34:02,001 - INFO - Database and tables created successfully
+2025-04-22 23:34:22,099 - WARNING - Login failed: manudeep not found
+2025-04-22 23:34:24,433 - INFO - User manudeep registered successfully
+2025-04-22 23:35:53,854 - INFO - User manudeep authenticated successfully
+2025-04-22 23:35:59,956 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 23:36:01,496 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-22 23:36:04,579 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-22 23:36:09,036 - INFO - User logged out
+2025-04-22 23:36:27,477 - INFO - User user registered successfully
+2025-04-22 23:37:25,742 - INFO - User user authenticated successfully
+2025-04-22 23:37:41,583 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 23:37:42,886 - INFO - File C:/Users/deepm/OneDrive/Pictures/shelby-company-ltd-notorious-media.jpg uploaded by user
+2025-04-22 23:37:45,611 - INFO - File shelby-company-ltd-notorious-media.jpg decrypted and opened by user
+2025-04-22 23:37:58,583 - INFO - File shelby-company-ltd-notorious-media.jpg shared with manudeep by user
+2025-04-22 23:38:01,624 - INFO - User logged out
+2025-04-22 23:38:18,180 - INFO - User user authenticated successfully
+2025-04-22 23:38:22,681 - INFO - User logged out
+2025-04-22 23:38:41,546 - INFO - User manudeep authenticated successfully
+2025-04-22 23:38:44,617 - INFO - File shelby-company-ltd-notorious-media.jpg decrypted and opened by manudeep
+2025-04-22 23:38:51,644 - ERROR - Decryption failed: 
+2025-04-22 23:38:55,074 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg deleted by manudeep
+2025-04-22 23:39:03,816 - ERROR - Malware scan failed for C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg: could not connect to clamd server either by unix or network socket
+2025-04-22 23:39:05,575 - INFO - File C:/Users/deepm/OneDrive/Pictures/04126187bbd69eb1c2fcf20d8c47731e.jpg uploaded by manudeep
+2025-04-22 23:39:08,229 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by manudeep
+2025-04-22 23:39:12,293 - INFO - File shelby-company-ltd-notorious-media.jpg decrypted and opened by manudeep
+2025-04-22 23:39:22,844 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg shared with user by manudeep
+2025-04-22 23:39:28,071 - INFO - User logged out
+2025-04-22 23:39:43,514 - INFO - User user authenticated successfully
+2025-04-22 23:39:46,385 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-22 23:39:51,068 - ERROR - Decryption failed: 
+2025-04-22 23:39:53,907 - ERROR - Decryption failed: 
+2025-04-22 23:39:57,030 - INFO - File shelby-company-ltd-notorious-media.jpg decrypted and opened by user
+2025-04-22 23:40:00,252 - INFO - File 04126187bbd69eb1c2fcf20d8c47731e.jpg decrypted and opened by user
+2025-04-22 23:40:09,041 - INFO - User logged out

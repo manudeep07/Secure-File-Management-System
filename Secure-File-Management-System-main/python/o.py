@@ -62,14 +62,15 @@ def setup_database():
         
         cursor.execute('''CREATE TABLE IF NOT EXISTS files (
                             filename VARCHAR(255),
-                            owner VARCHAR(50),
+                            uploader VARCHAR(50),
                             encrypted_data BLOB,
                             metadata TEXT,
-                            FOREIGN KEY (owner) REFERENCES users(username))''')
+                            FOREIGN KEY (uploader) REFERENCES users(username))''')
         
         cursor.execute('''CREATE TABLE IF NOT EXISTS shared_files (
                             filename VARCHAR(255),
                             shared_with VARCHAR(50),
+                            shared_key BLOB,  -- Stores uploader's key for decryption
                             FOREIGN KEY (shared_with) REFERENCES users(username))''')
         
         conn.commit()
@@ -263,7 +264,7 @@ class FileManager:
                 database="file_system_db"
             )
             cursor = conn.cursor()
-            cursor.execute('INSERT INTO files (filename, owner, encrypted_data, metadata) VALUES (%s, %s, %s, %s)', 
+            cursor.execute('INSERT INTO files (filename, uploader, encrypted_data, metadata) VALUES (%s, %s, %s, %s)', 
                           (sanitize_input(os.path.basename(filepath)), self.username, encrypted_data, metadata))
             conn.commit()
             messagebox.showinfo("Success", "File uploaded and encrypted successfully!")
@@ -289,7 +290,7 @@ class FileManager:
                 database="file_system_db"
             )
             cursor = conn.cursor()
-            cursor.execute('INSERT INTO files (filename, owner, encrypted_data, metadata) VALUES (%s, %s, %s, %s)', 
+            cursor.execute('INSERT INTO files (filename, uploader, encrypted_data, metadata) VALUES (%s, %s, %s, %s)', 
                           (sanitize_input(filename), self.username, encrypted_data, metadata))
             conn.commit()
             messagebox.showinfo("Success", "File written and encrypted successfully!")
@@ -311,54 +312,35 @@ class FileManager:
                 database="file_system_db"
             )
             cursor = conn.cursor()
-            # Retrieve recipient's encryption key
+            # Check if user exists
             cursor.execute('SELECT encryption_key FROM users WHERE username=%s', (share_with,))
             recipient_key_data = cursor.fetchone()
             if not recipient_key_data:
                 messagebox.showerror("Error", f"User {share_with} not found!")
                 return
-            recipient_key = recipient_key_data[0]
-            recipient_cipher = Fernet(recipient_key)
-
-            # Fetch the original encrypted file data
-            cursor.execute('SELECT encrypted_data FROM files WHERE filename=%s AND owner=%s', (filename, self.username))
-            original_data = cursor.fetchone()
-            if not original_data:
-                messagebox.showerror("Error", "File not found or access denied!")
+            # Get the uploader's key
+            cursor.execute('SELECT uploader FROM files WHERE filename=%s', (filename,))
+            uploader = cursor.fetchone()
+            if not uploader:
+                messagebox.showerror("Error", "File not found!")
                 return
-            original_encrypted_data = original_data[0]
-
-            # Decrypt with owner's key and log for debugging
-            decrypted_data = self.decrypt_file(original_encrypted_data)
-            if not decrypted_data:
-                logging.error(f"Decryption failed during sharing for {filename} by {self.username}")
+            uploader_name = uploader[0]
+            cursor.execute('SELECT encryption_key FROM users WHERE username=%s', (uploader_name,))
+            uploader_key = cursor.fetchone()[0]
+            # Check if already shared
+            cursor.execute('SELECT 1 FROM shared_files WHERE filename=%s AND shared_with=%s', (filename, share_with))
+            if cursor.fetchone():
+                messagebox.showwarning("Warning", "File already shared with this user!")
                 return
-            logging.info(f"Decrypted data length for {filename}: {len(decrypted_data)} bytes")
-
-            # Re-encrypt with recipient's key
-            new_encrypted_data = recipient_cipher.encrypt(decrypted_data)
-            logging.info(f"Re-encrypted data length for {filename}_shared_with_{share_with}: {len(new_encrypted_data)} bytes")
-
-            # Create a new filename for the shared version
-            new_filename = f"{filename}_shared_with_{share_with}"
-            mod_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-            metadata = f"Size: {len(decrypted_data)} bytes, Modified: {mod_time}"
-
-            # Store the re-encrypted file for the recipient
-            cursor.execute('INSERT INTO files (filename, owner, encrypted_data, metadata) VALUES (%s, %s, %s, %s)', 
-                          (new_filename, share_with, new_encrypted_data, metadata))
-            
-            # Record the sharing permission
-            cursor.execute('INSERT INTO shared_files (filename, shared_with) VALUES (%s, %s)', (filename, share_with))
+            # Record sharing with uploader's key
+            cursor.execute('INSERT INTO shared_files (filename, shared_with, shared_key) VALUES (%s, %s, %s)', 
+                          (filename, share_with, uploader_key))
             conn.commit()
             messagebox.showinfo("Success", f"File shared with {share_with}")
             logging.info(f"File {filename} shared with {share_with} by {self.username}")
         except mysql.connector.Error as err:
             messagebox.showerror("Error", f"Database error: {err}")
             logging.error(f"File share failed for {filename}: {err}")
-        except Exception as e:
-            messagebox.showerror("Error", f"Sharing failed: {e}")
-            logging.error(f"Sharing failed for {filename}: {e}")
         finally:
             if 'conn' in locals():
                 conn.close()
@@ -372,22 +354,23 @@ class FileManager:
                 database="file_system_db"
             )
             cursor = conn.cursor()
-            # Check if the file belongs to the user (owned or shared and re-encrypted)
-            cursor.execute('SELECT owner FROM files WHERE filename=%s AND owner=%s', (filename, self.username))
-            is_owner = cursor.fetchone()
-            if not is_owner:
-                # Check if it's a re-encrypted shared file owned by the user
-                base_filename = filename.split('_shared_with_')[0]
-                cursor.execute('SELECT shared_with FROM shared_files WHERE filename=%s AND shared_with=%s', (base_filename, self.username))
+            # Check if the file was uploaded by the user or shared with them
+            cursor.execute('SELECT uploader FROM files WHERE filename=%s', (filename,))
+            uploader = cursor.fetchone()
+            if uploader and uploader[0] == self.username:
+                # User can delete their own file
+                pass
+            else:
+                # Check if the user has access via sharing
+                cursor.execute('SELECT shared_with FROM shared_files WHERE filename=%s AND shared_with=%s', (filename, self.username))
                 has_shared_access = cursor.fetchone()
                 if not has_shared_access:
-                    messagebox.showerror("Error", "You can only delete your own files or shared files re-encrypted for you!")
+                    messagebox.showerror("Error", "You can only delete files you uploaded or were shared with you!")
                     return
             # Delete from files table
             cursor.execute('DELETE FROM files WHERE filename=%s', (filename,))
-            # Delete any sharing records if it's the original file
-            if not filename.endswith('_shared_with_'):
-                cursor.execute('DELETE FROM shared_files WHERE filename=%s', (filename,))
+            # Delete sharing records
+            cursor.execute('DELETE FROM shared_files WHERE filename=%s', (filename,))
             conn.commit()
             messagebox.showinfo("Success", f"File {filename} deleted successfully!")
             logging.info(f"File {filename} deleted by {self.username}")
@@ -408,17 +391,11 @@ class FileManager:
                 database="file_system_db"
             )
             cursor = conn.cursor()
-            cursor.execute('SELECT filename FROM files WHERE owner=%s', (self.username,))
-            owned_files = [row[0] for row in cursor.fetchall() or []]
+            cursor.execute('SELECT filename FROM files WHERE uploader=%s', (self.username,))
+            uploaded_files = [row[0] for row in cursor.fetchall() or []]
             cursor.execute('SELECT filename FROM shared_files WHERE shared_with=%s', (self.username,))
-            shared_base_files = [row[0] for row in cursor.fetchall() or []]
-            shared_files = []
-            for base_file in shared_base_files:
-                shared_filename = f"{base_file}_shared_with_{self.username}"
-                cursor.execute('SELECT filename FROM files WHERE filename=%s AND owner=%s', (shared_filename, self.username))
-                if cursor.fetchone():
-                    shared_files.append(shared_filename)
-            return owned_files + shared_files
+            shared_files = [row[0] for row in cursor.fetchall() or []]
+            return uploaded_files + shared_files  # All files the user can access
         except mysql.connector.Error as err:
             messagebox.showerror("Error", f"Database error: {err}")
             logging.error(f"Get files failed for {self.username}: {err}")
@@ -436,16 +413,16 @@ class FileManager:
                 database="file_system_db"
             )
             cursor = conn.cursor()
-            # Check if the file belongs to the user (owned or shared and re-encrypted)
-            cursor.execute('SELECT owner FROM files WHERE filename=%s AND owner=%s', (filename, self.username))
-            is_owner = cursor.fetchone()
-            if not is_owner:
-                # Check if it's a re-encrypted shared file owned by the user
-                base_filename = filename.split('_shared_with_')[0]
-                cursor.execute('SELECT shared_with FROM shared_files WHERE filename=%s AND shared_with=%s', (base_filename, self.username))
+            # Check if the user uploaded the file or has shared access
+            cursor.execute('SELECT uploader FROM files WHERE filename=%s', (filename,))
+            uploader = cursor.fetchone()
+            if uploader and uploader[0] == self.username:
+                pass
+            else:
+                cursor.execute('SELECT shared_with FROM shared_files WHERE filename=%s AND shared_with=%s', (filename, self.username))
                 has_shared_access = cursor.fetchone()
                 if not has_shared_access:
-                    messagebox.showerror("Error", "You can only view metadata for your own files or shared files re-encrypted for you!")
+                    messagebox.showerror("Error", "You can only view metadata for files you uploaded or were shared with you!")
                     return "Access denied"
             # Retrieve metadata
             cursor.execute('SELECT metadata FROM files WHERE filename=%s', (filename,))
@@ -587,23 +564,20 @@ class App:
                 database="file_system_db"
             )
             cursor = conn.cursor()
-            # Check if the user is the owner or has shared access
-            cursor.execute('SELECT owner FROM files WHERE filename=%s AND owner=%s', (filename, self.username))
-            is_owner = cursor.fetchone()
-            if not is_owner:
-                # Check if it's a re-encrypted shared file or original shared file
-                if '_shared_with_' in filename:
-                    base_filename = filename.split('_shared_with_')[0]
-                    cursor.execute('SELECT shared_with FROM shared_files WHERE filename=%s AND shared_with=%s', (base_filename, self.username))
-                    has_shared_access = cursor.fetchone()
-                else:
-                    cursor.execute('SELECT shared_with FROM shared_files WHERE filename=%s AND shared_with=%s', (filename, self.username))
-                    has_shared_access = cursor.fetchone()
-                if not has_shared_access:
+            # Check if the user uploaded the file or has shared access
+            cursor.execute('SELECT uploader FROM files WHERE filename=%s', (filename,))
+            uploader = cursor.fetchone()
+            if not uploader or uploader[0] != self.username:
+                # Check if the user has shared access
+                cursor.execute('SELECT shared_key FROM shared_files WHERE filename=%s AND shared_with=%s', (filename, self.username))
+                shared_key_data = cursor.fetchone()
+                if not shared_key_data:
                     messagebox.showerror("Error", "File not found or access denied!")
                     return
+                # Use the uploader's key for decryption
+                self.file_manager.cipher = Fernet(shared_key_data[0])
 
-            # Proceed with reading if owner or shared
+            # Proceed with reading
             cursor.execute('SELECT encrypted_data FROM files WHERE filename=%s', (filename,))
             data = cursor.fetchone()
             if not data:
@@ -615,10 +589,10 @@ class App:
             if not decrypted:
                 return  # Decryption failure already logged in decrypt_file
 
-            # Determine file extension (assume it's part of the filename)
-            file_ext = os.path.splitext(filename)[1].lower()  # e.g., '.txt', '.png'
+            # Determine file extension
+            file_ext = os.path.splitext(filename)[1].lower()
             if not file_ext:
-                file_ext = '.bin'  # Default to binary if no extension
+                file_ext = '.bin'
 
             # Use a temporary file to store decrypted content
             with tempfile.NamedTemporaryFile(delete=False, suffix=file_ext) as temp_file:
@@ -628,19 +602,19 @@ class App:
             # Open the file with the default application based on OS
             system = platform.system()
             if system == "Windows":
-                os.startfile(temp_file_path)  # Windows: Opens with default app
-            elif system == "Darwin":  # macOS
+                os.startfile(temp_file_path)
+            elif system == "Darwin":
                 subprocess.run(["open", temp_file_path], check=True)
             elif system == "Linux":
                 subprocess.run(["xdg-open", temp_file_path], check=True)
             else:
-                messagebox.showwarning("Warning", f"Unsupported OS: {system}. File saved as {temp_file_path}")
-                logging.info(f"File {filename} decrypted and saved to {temp_file_path} (unsupported OS)")
+                messagebox.showwarning(f"Unsupported OS: {system}. File saved as {temp_file_path}")
+                logging.info(f"File {filename} decrypted and saved to {temp_file_path}")
 
             logging.info(f"File {filename} decrypted and opened by {self.username}")
 
-            # Optional: Clean up the temp file after opening (comment out if you want to keep it)
-            # os.unlink(temp_file_path)  # Uncomment to delete after opening
+            # Optional cleanup (uncomment to delete after opening)
+            # os.unlink(temp_file_path)
 
         except mysql.connector.Error as err:
             messagebox.showerror("Error", f"Database error: {err}")
@@ -656,7 +630,7 @@ class App:
                 conn.close()
 
     def share_file(self, filename):
-        share_with = tk.simpledialog.askstring("Share", "Enter username to share with (same machine):")
+        share_with = simpledialog.askstring("Share", "Enter username to share with:")
         if share_with:
             self.file_manager.share_file(filename, share_with)
 
